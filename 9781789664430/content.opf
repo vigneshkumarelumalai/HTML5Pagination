@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:container="urn:oasis:names:tc:opendocument:xmlns:container" xmlns:epub="http://www.idpf.org/2007/ops" xmlns:ncx="http://www.daisy.org/z3986/2005/ncx/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dcmitype="http://purl.org/dc/dcmitype/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/" xmlns:aid5="http://ns.adobe.com/AdobeInDesign/5.0/" xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" xmlns:pub="http://publishingxml.org/ns" xmlns:bg="http://bookgenesis.com/ns" version="3.0" xml:lang="en-GB" prefix="ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/ a11y: http://www.idpf.org/epub/vocab/package/a11y/#" unique-identifier="isbn_epub">
+<metadata>
+<dc:title id="title1">E-Commerce Website Optimization</dc:title>
+<dc:identifier id="isbn_epub">9781789664430</dc:identifier>
+<dc:creator id="creator01">Johann van Tonder Dan Croxen-John</dc:creator>
+<dc:publisher>Kogan Page</dc:publisher>
+<dc:date>2020</dc:date>
+<dc:language>en-GB</dc:language>
+<link rel="dcterms:conformsTo" href="http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-aa"/>
+
+<dc:source id="pagination_source">none</dc:source>
+<meta refines="#pagination_source" property="source-of">pagination</meta>
+
+<!-- <meta property="a11y:certifiedBy">Kogan Page</meta>
+<meta property="a11y:certifierCredential">DAISY Ace OK</meta>
+<link rel="a11y:certifierReport" href="https://koganpage.app.box.com/folder/125856599728"/> -->
+<!-- 
+<meta property="schema:accessibilitySummary">A complex book with images, tables, list items and complex formatting, which are defined with accessible structural markup. This book contains various accessibility features such as alternative text and long descriptions for images, table of contents, page-list, landmarks, reading order, index and semantic structure.</meta>
+
+<meta property="schema:accessibilitySummary">A very complex book with some images, tables, list items and complex formatting, which are defined with accessible structural markup. This book contains various accessibility features such as alternative text for images, table of content, page-list, landmark, reading order, Structural Navigation, Index, and semantic structure.</meta> 
+ -->
+<meta property="schema:accessibilitySummary">A very complex book with some images, tables, list items and complex formatting, which are defined with accessible structural markup. This book contains various accessibility features such as alternative text for images, table of content, page-list, landmark, reading order, Structural Navigation, Index, and semantic structure.</meta> 
+
+
+<!--  <meta property="a11y:certifiedBy">Benetech</meta>
+<meta property="a11y:certifierCredential">https://bornaccessible.org/certification/gca-credential/</meta> -->
+
+<meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.0 Level AA and EPUB Accessibility 1.0 and includes mark-up, structure and structural semantics to ensure accessibility and compatibility with assistive technologies. Figures and tables are described with alt text and long descriptions.</meta>
+<meta property="schema:accessModeSufficient">textual,visual</meta>
+<meta property="schema:accessModeSufficient">textual</meta>
+<meta property="schema:accessMode">textual</meta>
+<meta property="schema:accessMode">visual</meta>
+
+<meta property="schema:accessibilityHazard">none</meta>
+
+<meta property="schema:accessibilityFeature">alternativeText</meta>
+<!-- <meta property="schema:accessibilityFeature">annotations</meta>
+<meta property="schema:accessibilityFeature">bookmarks</meta>
+<meta property="schema:accessibilityFeature">captions</meta> -->
+<meta property="schema:accessibilityFeature">displayTransformability</meta>
+<meta property="schema:accessibilityFeature">longDescription</meta>
+<meta property="schema:accessibilityFeature">printPageNumbers</meta>
+<meta property="schema:accessibilityFeature">readingOrder</meta>
+<meta property="schema:accessibilityFeature">structuralNavigation</meta>
+<meta property="schema:accessibilityFeature">tableOfContents</meta>
+<meta property="schema:accessibilityFeature">index</meta>
+ 
+<meta property="dcterms:modified">2020-11-05T17:16:39Z</meta>
+<meta name="cover" content="cover-image"/>
+<meta property="ibooks:specified-fonts">true</meta>
+<dc:rights>All rights reserved.</dc:rights>
+</metadata>
+
+<manifest>
+<item id="nav_ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+<item id="stylesheet" href="koganpage.css" media-type="text/css" />
+<item id="font1" href="fonts/checkbox.jpg" media-type="application/vnd.ms-opentype"/>
+<item id="font2" href="fonts/Lato-Bold.ttf" media-type="application/vnd.ms-opentype"/>
+<item id="font3" href="fonts/Lato-BoldItalic.ttf" media-type="application/vnd.ms-opentype"/>
+<item id="font4" href="fonts/Lato-Italic.ttf" media-type="application/vnd.ms-opentype"/>
+<item id="font5" href="fonts/Lato-Regular.ttf" media-type="application/vnd.ms-opentype"/>
+<item id="font6" href="fonts/NotoSerif-Bold.ttf" media-type="application/vnd.ms-opentype"/>
+<item id="font7" href="fonts/NotoSerif-BoldItalic.ttf" media-type="application/vnd.ms-opentype"/>
+<item id="font8" href="fonts/NotoSerif-Italic.ttf" media-type="application/vnd.ms-opentype"/>
+<item id="font9" href="fonts/NotoSerif-Regular.ttf" media-type="application/vnd.ms-opentype"/>
+<item id="cover" href="cover/Ebook-cover-RGB.xhtml" media-type="application/xhtml+xml"/>
+<item id="nav_xhtml" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+<item id="ch001" href="content/01_endorsements01.xhtml" media-type="application/xhtml+xml"/>
+<item id="ch002" href="content/02_titlepage01.xhtml" media-type="application/xhtml+xml" />
+<item id="ch003" href="content/03_toc01.xhtml" media-type="application/xhtml+xml" />
+<item id="ch004" href="content/04_frontmatter01.xhtml" media-type="application/xhtml+xml" />
+<item id="ch005" href="content/05_preface01.xhtml" media-type="application/xhtml+xml" />
+<item id="ch006" href="content/06_acknowledgements01.xhtml" media-type="application/xhtml+xml" />
+<item id="ch007" href="content/07_chapter01.xhtml" media-type="application/xhtml+xml" />
+<item id="ch008" href="content/08_chapter02.xhtml" media-type="application/xhtml+xml" />
+<item id="ch009" href="content/09_chapter03.xhtml" media-type="application/xhtml+xml" />
+<item id="ch010" href="content/10_chapter04.xhtml" media-type="application/xhtml+xml" />
+<item id="ch011" href="content/11_chapter05.xhtml" media-type="application/xhtml+xml" />
+<item id="ch012" href="content/12_chapter06.xhtml" media-type="application/xhtml+xml" />
+<item id="ch013" href="content/13_chapter07.xhtml" media-type="application/xhtml+xml" />
+<item id="ch014" href="content/14_chapter08.xhtml" media-type="application/xhtml+xml" />
+<item id="ch015" href="content/15_chapter09.xhtml" media-type="application/xhtml+xml" />
+<item id="ch016" href="content/16_chapter10.xhtml" media-type="application/xhtml+xml" />
+<item id="ch017" href="content/17_chapter11.xhtml" media-type="application/xhtml+xml" />
+<item id="ch018" href="content/18_chapter12.xhtml" media-type="application/xhtml+xml" />
+<item id="ch019" href="content/19_chapter13.xhtml" media-type="application/xhtml+xml" />
+<item id="ch020" href="content/20_chapter14.xhtml" media-type="application/xhtml+xml" />
+<item id="ch021" href="content/21_index01.xhtml" media-type="application/xhtml+xml" />
+<item id="ch022" href="content/22_copyright01.xhtml" media-type="application/xhtml+xml" />
+<item id="cover-image" href="cover/Ebook-cover-RGB.jpg" media-type="image/jpeg" properties="cover-image"/>
+<item id="KP-logo" href="content/images/KP-logo.jpg" media-type="image/jpeg"/>
+<item id="image1" href="content/images/M01NF001.jpg" media-type="image/jpeg"/>
+<item id="image2" href="content/images/M03NF001.jpg" media-type="image/jpeg"/>
+<item id="image3" href="content/images/M04NF001.jpg" media-type="image/jpeg"/>
+<item id="image4" href="content/images/M04NF002.jpg" media-type="image/jpeg"/>
+<item id="image5" href="content/images/M04NF003.jpg" media-type="image/jpeg"/>
+<item id="image6" href="content/images/M04NF004.jpg" media-type="image/jpeg"/>
+<item id="image7" href="content/images/M04NF005.jpg" media-type="image/jpeg"/>
+<item id="image8" href="content/images/M04NF006.jpg" media-type="image/jpeg"/>
+<item id="image9" href="content/images/M04NF007.jpg" media-type="image/jpeg"/>
+<item id="image10" href="content/images/M04NF008.jpg" media-type="image/jpeg"/>
+<item id="image11" href="content/images/M05NF001.jpg" media-type="image/jpeg"/>
+<item id="image12" href="content/images/M05NF002.jpg" media-type="image/jpeg"/>
+<item id="image13" href="content/images/M05NF003.jpg" media-type="image/jpeg"/>
+<item id="image14" href="content/images/M06NF001.jpg" media-type="image/jpeg"/>
+<item id="image15" href="content/images/M07NF001.jpg" media-type="image/jpeg"/>
+<item id="image16" href="content/images/M07NF002.jpg" media-type="image/jpeg"/>
+<item id="image17" href="content/images/M08NF001.jpg" media-type="image/jpeg"/>
+<item id="image18" href="content/images/M08NF002.jpg" media-type="image/jpeg"/>
+<item id="image19" href="content/images/M08NF003.jpg" media-type="image/jpeg"/>
+<item id="image20" href="content/images/M08NF004.jpg" media-type="image/jpeg"/>
+<item id="image21" href="content/images/M08NF005.jpg" media-type="image/jpeg"/>
+<item id="image22" href="content/images/M08NF006.jpg" media-type="image/jpeg"/>
+<item id="image23" href="content/images/M09NF001.jpg" media-type="image/jpeg"/>
+<item id="image24" href="content/images/M09NF002.jpg" media-type="image/jpeg"/>
+<item id="image25" href="content/images/M09NF003.jpg" media-type="image/jpeg"/>
+<item id="image26" href="content/images/M09NF004.jpg" media-type="image/jpeg"/>
+<item id="image27" href="content/images/M09NF005.jpg" media-type="image/jpeg"/>
+<item id="image28" href="content/images/M09NF006.jpg" media-type="image/jpeg"/>
+<item id="image29" href="content/images/M10NF001.jpg" media-type="image/jpeg"/>
+<item id="image30" href="content/images/M10NF002.jpg" media-type="image/jpeg"/>
+<item id="image31" href="content/images/M12NF001.jpg" media-type="image/jpeg"/>
+<item id="image32" href="content/images/M13NF001.jpg" media-type="image/jpeg"/>
+<item id="image33" href="content/images/M13NF002.jpg" media-type="image/jpeg"/>
+<item id="image34" href="content/images/M13NF003.jpg" media-type="image/jpeg"/>
+<item id="image35" href="content/images/M13NF004.jpg" media-type="image/jpeg"/>
+<item id="image36" href="content/images/M14NF001.jpg" media-type="image/jpeg"/>
+<item id="image37" href="content/images/M14NF002.jpg" media-type="image/jpeg"/>
+<item id="image38" href="content/images/M14NF003.jpg" media-type="image/jpeg"/>
+</manifest>
+<spine toc="nav_ncx">
+<itemref idref="cover" linear="no"/>
+<itemref idref="ch001"/>
+<itemref idref="ch002"/>
+<itemref idref="ch003"/>
+<itemref idref="ch004"/>
+<itemref idref="ch005"/>
+<itemref idref="ch006"/>
+<itemref idref="ch007"/>
+<itemref idref="ch008"/>
+<itemref idref="ch009"/>
+<itemref idref="ch010"/>
+<itemref idref="ch011"/>
+<itemref idref="ch012"/>
+<itemref idref="ch013"/>
+<itemref idref="ch014"/>
+<itemref idref="ch015"/>
+<itemref idref="ch016"/>
+<itemref idref="ch017"/>
+<itemref idref="ch018"/>
+<itemref idref="ch019"/>
+<itemref idref="ch020"/>
+<itemref idref="ch021"/>
+<itemref idref="ch022"/>
+</spine>
+<guide>
+<reference type="cover" title="Cover" href="cover/Ebook-cover-RGB.xhtml"/>
+<reference type="toc" title="Toc" href="nav.xhtml"/>
+<reference href="content/01_endorsements01.xhtml" title="Start of text" type="text"/>
+</guide>
+</package>

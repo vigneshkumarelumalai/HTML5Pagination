@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ncx:ncx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:container="urn:oasis:names:tc:opendocument:xmlns:container" xmlns:epub="http://www.idpf.org/2007/ops" xmlns:ncx="http://www.daisy.org/z3986/2005/ncx/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dcmitype="http://purl.org/dc/dcmitype/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" xmlns:aid="http://ns.adobe.com/AdobeInDesign/4.0/" xmlns:aid5="http://ns.adobe.com/AdobeInDesign/5.0/" xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" xmlns:pub="http://publishingxml.org/ns" xmlns:bg="http://bookgenesis.com/ns" version="2005-1" xml:lang="en-GB">
+<ncx:head>
+<ncx:meta name="dtb:depth" content="1"/>
+<ncx:meta name="dtb:uid" content="9781789664430"/>
+</ncx:head>
+<ncx:docTitle>
+<ncx:text>E-Commerce Website Optimization</ncx:text>
+</ncx:docTitle>
+<ncx:docAuthor>
+<ncx:text>Johann van Tonder and Dan Croxen-John</ncx:text>
+</ncx:docAuthor>
+<ncx:navMap>
+<ncx:navPoint id="NavPoint-1" playOrder="1"><ncx:navLabel><ncx:text>List of figures and tables</ncx:text></ncx:navLabel><ncx:content src="content/04_frontmatter01.xhtml#fm_sec_008"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-2" playOrder="2"><ncx:navLabel><ncx:text>Preface</ncx:text></ncx:navLabel><ncx:content src="content/05_preface01.xhtml#fm_sec_011"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-3" playOrder="3"><ncx:navLabel><ncx:text>Acknowledgements</ncx:text></ncx:navLabel><ncx:content src="content/06_acknowledgements01.xhtml#fm_sec_012"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-4" playOrder="4"><ncx:navLabel><ncx:text>01 Introduction to e-commerce optimization</ncx:text></ncx:navLabel><ncx:content src="content/07_chapter01.xhtml#ch01_sec_001"/>
+<ncx:navPoint id="NavPoint-5" playOrder="5"><ncx:navLabel><ncx:text>E-commerce website optimization</ncx:text></ncx:navLabel><ncx:content src="content/07_chapter01.xhtml#ch01_h2_001"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-6" playOrder="6"><ncx:navLabel><ncx:text>Summary</ncx:text></ncx:navLabel><ncx:content src="content/07_chapter01.xhtml#ch01_h2_002"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-7" playOrder="7"><ncx:navLabel><ncx:text>Notes</ncx:text></ncx:navLabel><ncx:content src="content/07_chapter01.xhtml#ch01_sec_002"/></ncx:navPoint></ncx:navPoint>
+<ncx:navPoint id="NavPoint-8" playOrder="8"><ncx:navLabel><ncx:text>02 The kick-off</ncx:text></ncx:navLabel><ncx:content src="content/08_chapter02.xhtml#ch02_sec_001"/>
+<ncx:navPoint id="NavPoint-9" playOrder="9"><ncx:navLabel><ncx:text>Be an evangelist</ncx:text></ncx:navLabel><ncx:content src="content/08_chapter02.xhtml#ch02_h2_001"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-10" playOrder="10"><ncx:navLabel><ncx:text>Get top-level support</ncx:text></ncx:navLabel><ncx:content src="content/08_chapter02.xhtml#ch02_h2_002"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-11" playOrder="11"><ncx:navLabel><ncx:text>Get the team in place</ncx:text></ncx:navLabel><ncx:content src="content/08_chapter02.xhtml#ch02_h2_003"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-12" playOrder="12"><ncx:navLabel><ncx:text>Gathering evidence</ncx:text></ncx:navLabel><ncx:content src="content/08_chapter02.xhtml#ch02_h2_004"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-13" playOrder="13"><ncx:navLabel><ncx:text>Experimentation platform</ncx:text></ncx:navLabel><ncx:content src="content/08_chapter02.xhtml#ch02_h2_005"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-14" playOrder="14"><ncx:navLabel><ncx:text>How to deal with resistance</ncx:text></ncx:navLabel><ncx:content src="content/08_chapter02.xhtml#ch02_h2_006"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-15" playOrder="15"><ncx:navLabel><ncx:text>Summary</ncx:text></ncx:navLabel><ncx:content src="content/08_chapter02.xhtml#ch02_h2_007"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-16" playOrder="16"><ncx:navLabel><ncx:text>Notes</ncx:text></ncx:navLabel><ncx:content src="content/08_chapter02.xhtml#ch02_sec_002"/></ncx:navPoint></ncx:navPoint>
+<ncx:navPoint id="NavPoint-17" playOrder="17"><ncx:navLabel><ncx:text>03 Gather data</ncx:text></ncx:navLabel><ncx:content src="content/09_chapter03.xhtml#ch03_sec_001"/>
+<ncx:navPoint id="NavPoint-18" playOrder="18"><ncx:navLabel><ncx:text>From data to insights</ncx:text></ncx:navLabel><ncx:content src="content/09_chapter03.xhtml#ch03_h2_001"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-19" playOrder="19"><ncx:navLabel><ncx:text>Extract insights like the CIA</ncx:text></ncx:navLabel><ncx:content src="content/09_chapter03.xhtml#ch03_h2_002"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-20" playOrder="20"><ncx:navLabel><ncx:text>Problem framing</ncx:text></ncx:navLabel><ncx:content src="content/09_chapter03.xhtml#ch03_h2_003"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-21" playOrder="21"><ncx:navLabel><ncx:text>Summary</ncx:text></ncx:navLabel><ncx:content src="content/09_chapter03.xhtml#ch03_h2_004"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-22" playOrder="22"><ncx:navLabel><ncx:text>Notes</ncx:text></ncx:navLabel><ncx:content src="content/09_chapter03.xhtml#ch03_sec_002"/></ncx:navPoint></ncx:navPoint>
+<ncx:navPoint id="NavPoint-23" playOrder="23"><ncx:navLabel><ncx:text>04 Behavioural research</ncx:text></ncx:navLabel><ncx:content src="content/10_chapter04.xhtml#ch04_sec_001"/>
+<ncx:navPoint id="NavPoint-24" playOrder="24"><ncx:navLabel><ncx:text>Website analytics</ncx:text></ncx:navLabel><ncx:content src="content/10_chapter04.xhtml#ch04_h2_001"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-25" playOrder="25"><ncx:navLabel><ncx:text>User journey mapping</ncx:text></ncx:navLabel><ncx:content src="content/10_chapter04.xhtml#ch04_h2_002"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-26" playOrder="26"><ncx:navLabel><ncx:text>Session replay</ncx:text></ncx:navLabel><ncx:content src="content/10_chapter04.xhtml#ch04_h2_003"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-27" playOrder="27"><ncx:navLabel><ncx:text>Usability testing</ncx:text></ncx:navLabel><ncx:content src="content/10_chapter04.xhtml#ch04_h2_004"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-28" playOrder="28"><ncx:navLabel><ncx:text>Heuristic evaluation</ncx:text></ncx:navLabel><ncx:content src="content/10_chapter04.xhtml#ch04_h2_005"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-29" playOrder="29"><ncx:navLabel><ncx:text>Customer immersion</ncx:text></ncx:navLabel><ncx:content src="content/10_chapter04.xhtml#ch04_h2_006"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-30" playOrder="30"><ncx:navLabel><ncx:text>Site search</ncx:text></ncx:navLabel><ncx:content src="content/10_chapter04.xhtml#ch04_h2_007"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-31" playOrder="31"><ncx:navLabel><ncx:text>Form analysis</ncx:text></ncx:navLabel><ncx:content src="content/10_chapter04.xhtml#ch04_h2_008"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-32" playOrder="32"><ncx:navLabel><ncx:text>Summary</ncx:text></ncx:navLabel><ncx:content src="content/10_chapter04.xhtml#ch04_h2_009"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-33" playOrder="33"><ncx:navLabel><ncx:text>Notes</ncx:text></ncx:navLabel><ncx:content src="content/10_chapter04.xhtml#ch04_sec_002"/></ncx:navPoint></ncx:navPoint>
+<ncx:navPoint id="NavPoint-34" playOrder="34"><ncx:navLabel><ncx:text>05 Voice of customer</ncx:text></ncx:navLabel><ncx:content src="content/11_chapter05.xhtml#ch05_sec_001"/>
+<ncx:navPoint id="NavPoint-35" playOrder="35"><ncx:navLabel><ncx:text>Interviews</ncx:text></ncx:navLabel><ncx:content src="content/11_chapter05.xhtml#ch05_h2_001"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-36" playOrder="36"><ncx:navLabel><ncx:text>E-mail surveys</ncx:text></ncx:navLabel><ncx:content src="content/11_chapter05.xhtml#ch05_h2_002"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-37" playOrder="37"><ncx:navLabel><ncx:text>Feedback and transcript analysis</ncx:text></ncx:navLabel><ncx:content src="content/11_chapter05.xhtml#ch05_h2_003"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-38" playOrder="38"><ncx:navLabel><ncx:text>On-site polls</ncx:text></ncx:navLabel><ncx:content src="content/11_chapter05.xhtml#ch05_h2_004"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-39" playOrder="39"><ncx:navLabel><ncx:text>NPS survey</ncx:text></ncx:navLabel><ncx:content src="content/11_chapter05.xhtml#ch05_h2_005"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-40" playOrder="40"><ncx:navLabel><ncx:text>Value proposition</ncx:text></ncx:navLabel><ncx:content src="content/11_chapter05.xhtml#ch05_h2_006"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-41" playOrder="41"><ncx:navLabel><ncx:text>Competitor analysis</ncx:text></ncx:navLabel><ncx:content src="content/11_chapter05.xhtml#ch05_h2_007"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-42" playOrder="42"><ncx:navLabel><ncx:text>Put it all together in personas</ncx:text></ncx:navLabel><ncx:content src="content/11_chapter05.xhtml#ch05_h2_008"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-43" playOrder="43"><ncx:navLabel><ncx:text>Summary</ncx:text></ncx:navLabel><ncx:content src="content/11_chapter05.xhtml#ch05_h2_009"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-44" playOrder="44"><ncx:navLabel><ncx:text>Notes</ncx:text></ncx:navLabel><ncx:content src="content/11_chapter05.xhtml#ch05_sec_002"/></ncx:navPoint></ncx:navPoint>
+<ncx:navPoint id="NavPoint-45" playOrder="45"><ncx:navLabel><ncx:text>06 Merchandising analytics</ncx:text></ncx:navLabel><ncx:content src="content/12_chapter06.xhtml#ch06_sec_001"/>
+<ncx:navPoint id="NavPoint-46" playOrder="46"><ncx:navLabel><ncx:text>New product analysis</ncx:text></ncx:navLabel><ncx:content src="content/12_chapter06.xhtml#ch06_h2_001"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-47" playOrder="47"><ncx:navLabel><ncx:text>Ratio analysis</ncx:text></ncx:navLabel><ncx:content src="content/12_chapter06.xhtml#ch06_h4_002"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-48" playOrder="48"><ncx:navLabel><ncx:text>Look-to-book analysis</ncx:text></ncx:navLabel><ncx:content src="content/12_chapter06.xhtml#ch06_h2_003"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-49" playOrder="49"><ncx:navLabel><ncx:text>Price-point analysis</ncx:text></ncx:navLabel><ncx:content src="content/12_chapter06.xhtml#ch06_h2_004"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-50" playOrder="50"><ncx:navLabel><ncx:text>Price testing</ncx:text></ncx:navLabel><ncx:content src="content/12_chapter06.xhtml#ch06_h2_005"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-51" playOrder="51"><ncx:navLabel><ncx:text>Summary</ncx:text></ncx:navLabel><ncx:content src="content/12_chapter06.xhtml#ch06_h2_006"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-52" playOrder="52"><ncx:navLabel><ncx:text>Notes</ncx:text></ncx:navLabel><ncx:content src="content/12_chapter06.xhtml#ch06_sec_002"/></ncx:navPoint></ncx:navPoint>
+<ncx:navPoint id="NavPoint-53" playOrder="53"><ncx:navLabel><ncx:text>07 Create an experimentation roadmap</ncx:text></ncx:navLabel><ncx:content src="content/13_chapter07.xhtml#ch07_sec_001"/>
+<ncx:navPoint id="NavPoint-54" playOrder="54"><ncx:navLabel><ncx:text>How to prioritize test ideas</ncx:text></ncx:navLabel><ncx:content src="content/13_chapter07.xhtml#ch07_h2_001"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-55" playOrder="55"><ncx:navLabel><ncx:text>Prioritization frameworks</ncx:text></ncx:navLabel><ncx:content src="content/13_chapter07.xhtml#ch07_h2_002"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-56" playOrder="56"><ncx:navLabel><ncx:text>The experimentation roadmap</ncx:text></ncx:navLabel><ncx:content src="content/13_chapter07.xhtml#ch07_h2_003"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-57" playOrder="57"><ncx:navLabel><ncx:text>Summary</ncx:text></ncx:navLabel><ncx:content src="content/13_chapter07.xhtml#ch07_h2_004"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-58" playOrder="58"><ncx:navLabel><ncx:text>Notes</ncx:text></ncx:navLabel><ncx:content src="content/13_chapter07.xhtml#ch07_sec_002"/></ncx:navPoint></ncx:navPoint>
+<ncx:navPoint id="NavPoint-59" playOrder="59"><ncx:navLabel><ncx:text>08 From hypothesis to experiment</ncx:text></ncx:navLabel><ncx:content src="content/14_chapter08.xhtml#ch08_sec_001"/>
+<ncx:navPoint id="NavPoint-60" playOrder="60"><ncx:navLabel><ncx:text>What is a hypothesis?</ncx:text></ncx:navLabel><ncx:content src="content/14_chapter08.xhtml#ch08_h2_001"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-61" playOrder="61"><ncx:navLabel><ncx:text>Why you need hypotheses</ncx:text></ncx:navLabel><ncx:content src="content/14_chapter08.xhtml#ch08_h2_002"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-62" playOrder="62"><ncx:navLabel><ncx:text>From hypothesis to test</ncx:text></ncx:navLabel><ncx:content src="content/14_chapter08.xhtml#ch08_h2_003"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-63" playOrder="63"><ncx:navLabel><ncx:text>Summary</ncx:text></ncx:navLabel><ncx:content src="content/14_chapter08.xhtml#ch08_h2_004"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-64" playOrder="64"><ncx:navLabel><ncx:text>Notes</ncx:text></ncx:navLabel><ncx:content src="content/14_chapter08.xhtml#ch08_sec_002"/></ncx:navPoint></ncx:navPoint>
+<ncx:navPoint id="NavPoint-65" playOrder="65"><ncx:navLabel><ncx:text>09 Testing your hypothesis</ncx:text></ncx:navLabel><ncx:content src="content/15_chapter09.xhtml#ch09_sec_001"/>
+<ncx:navPoint id="NavPoint-66" playOrder="66"><ncx:navLabel><ncx:text>Online experimentation</ncx:text></ncx:navLabel><ncx:content src="content/15_chapter09.xhtml#ch09_h2_001"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-67" playOrder="67"><ncx:navLabel><ncx:text>Types of online experiments</ncx:text></ncx:navLabel><ncx:content src="content/15_chapter09.xhtml#ch09_h2_002"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-68" playOrder="68"><ncx:navLabel><ncx:text>Big or small changes?</ncx:text></ncx:navLabel><ncx:content src="content/15_chapter09.xhtml#ch09_h2_003"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-69" playOrder="69"><ncx:navLabel><ncx:text>Statistics for optimizers</ncx:text></ncx:navLabel><ncx:content src="content/15_chapter09.xhtml#ch09_h2_004"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-70" playOrder="70"><ncx:navLabel><ncx:text>The test brief</ncx:text></ncx:navLabel><ncx:content src="content/15_chapter09.xhtml#ch09_h2_005"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-71" playOrder="71"><ncx:navLabel><ncx:text>When to stop a test</ncx:text></ncx:navLabel><ncx:content src="content/15_chapter09.xhtml#ch09_h2_006"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-72" playOrder="72"><ncx:navLabel><ncx:text>Testing on low-traffic sites</ncx:text></ncx:navLabel><ncx:content src="content/15_chapter09.xhtml#ch09_h2_007"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-73" playOrder="73"><ncx:navLabel><ncx:text>How to avoid common pitfalls</ncx:text></ncx:navLabel><ncx:content src="content/15_chapter09.xhtml#ch09_h2_008"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-74" playOrder="74"><ncx:navLabel><ncx:text>Post-test analysis</ncx:text></ncx:navLabel><ncx:content src="content/15_chapter09.xhtml#ch09_h2_009"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-75" playOrder="75"><ncx:navLabel><ncx:text>Make the winning experience live</ncx:text></ncx:navLabel><ncx:content src="content/15_chapter09.xhtml#ch09_h2_010"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-76" playOrder="76"><ncx:navLabel><ncx:text>Document test results</ncx:text></ncx:navLabel><ncx:content src="content/15_chapter09.xhtml#ch09_h2_011"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-77" playOrder="77"><ncx:navLabel><ncx:text>Summary</ncx:text></ncx:navLabel><ncx:content src="content/15_chapter09.xhtml#ch09_h2_012"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-78" playOrder="78"><ncx:navLabel><ncx:text>Notes</ncx:text></ncx:navLabel><ncx:content src="content/15_chapter09.xhtml#ch09_sec_002"/></ncx:navPoint></ncx:navPoint>
+<ncx:navPoint id="NavPoint-79" playOrder="79"><ncx:navLabel><ncx:text>10 Personalization</ncx:text></ncx:navLabel><ncx:content src="content/16_chapter10.xhtml#ch10_sec_001"/>
+<ncx:navPoint id="NavPoint-80" playOrder="80"><ncx:navLabel><ncx:text>Data and segments</ncx:text></ncx:navLabel><ncx:content src="content/16_chapter10.xhtml#ch10_h2_001"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-81" playOrder="81"><ncx:navLabel><ncx:text>When to do personalization</ncx:text></ncx:navLabel><ncx:content src="content/16_chapter10.xhtml#ch10_h2_002"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-82" playOrder="82"><ncx:navLabel><ncx:text>Technical options for personalization</ncx:text></ncx:navLabel><ncx:content src="content/16_chapter10.xhtml#ch10_h2_003"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-83" playOrder="83"><ncx:navLabel><ncx:text>Personalization vs A/B testing</ncx:text></ncx:navLabel><ncx:content src="content/16_chapter10.xhtml#ch10_h2_004"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-84" playOrder="84"><ncx:navLabel><ncx:text>Summary</ncx:text></ncx:navLabel><ncx:content src="content/16_chapter10.xhtml#ch10_h2_005"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-85" playOrder="85"><ncx:navLabel><ncx:text>Notes</ncx:text></ncx:navLabel><ncx:content src="content/16_chapter10.xhtml#ch10_sec_002"/></ncx:navPoint></ncx:navPoint>
+<ncx:navPoint id="NavPoint-86" playOrder="86"><ncx:navLabel><ncx:text>11 Optimizing the optimization</ncx:text></ncx:navLabel><ncx:content src="content/17_chapter11.xhtml#ch11_sec_001"/>
+<ncx:navPoint id="NavPoint-87" playOrder="87"><ncx:navLabel><ncx:text>Summary</ncx:text></ncx:navLabel><ncx:content src="content/17_chapter11.xhtml#ch11_h2_001"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-88" playOrder="88"><ncx:navLabel><ncx:text>Notes</ncx:text></ncx:navLabel><ncx:content src="content/17_chapter11.xhtml#ch11_sec_002"/></ncx:navPoint></ncx:navPoint>
+<ncx:navPoint id="NavPoint-89" playOrder="89"><ncx:navLabel><ncx:text>12 Optimization people and culture</ncx:text></ncx:navLabel><ncx:content src="content/18_chapter12.xhtml#ch12_sec_001"/>
+<ncx:navPoint id="NavPoint-90" playOrder="90"><ncx:navLabel><ncx:text>How to find, select and motivate in-house optimizers</ncx:text></ncx:navLabel><ncx:content src="content/18_chapter12.xhtml#ch12_h2_001"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-91" playOrder="91"><ncx:navLabel><ncx:text>Obstacles to a culture of optimization</ncx:text></ncx:navLabel><ncx:content src="content/18_chapter12.xhtml#ch12_h2_002"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-92" playOrder="92"><ncx:navLabel><ncx:text>When to outsource</ncx:text></ncx:navLabel><ncx:content src="content/18_chapter12.xhtml#ch12_h2_003"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-93" playOrder="93"><ncx:navLabel><ncx:text>Summary</ncx:text></ncx:navLabel><ncx:content src="content/18_chapter12.xhtml#ch12_h2_004"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-94" playOrder="94"><ncx:navLabel><ncx:text>Notes</ncx:text></ncx:navLabel><ncx:content src="content/18_chapter12.xhtml#ch12_sec_002"/></ncx:navPoint></ncx:navPoint>
+<ncx:navPoint id="NavPoint-95" playOrder="95"><ncx:navLabel><ncx:text>13 The science of buying</ncx:text></ncx:navLabel><ncx:content src="content/19_chapter13.xhtml#ch13_sec_001"/>
+<ncx:navPoint id="NavPoint-96" playOrder="96"><ncx:navLabel><ncx:text>Why do people buy?</ncx:text></ncx:navLabel><ncx:content src="content/19_chapter13.xhtml#ch13_h2_001"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-97" playOrder="97"><ncx:navLabel><ncx:text>Six principles of influence</ncx:text></ncx:navLabel><ncx:content src="content/19_chapter13.xhtml#ch13_h2_002"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-98" playOrder="98"><ncx:navLabel><ncx:text>The buying decision-making process</ncx:text></ncx:navLabel><ncx:content src="content/19_chapter13.xhtml#ch13_h2_003"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-99" playOrder="99"><ncx:navLabel><ncx:text>FBM model of behaviour</ncx:text></ncx:navLabel><ncx:content src="content/19_chapter13.xhtml#ch13_h2_004"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-100" playOrder="100"><ncx:navLabel><ncx:text>Summary</ncx:text></ncx:navLabel><ncx:content src="content/19_chapter13.xhtml#ch13_h2_005"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-101" playOrder="101"><ncx:navLabel><ncx:text>Notes</ncx:text></ncx:navLabel><ncx:content src="content/19_chapter13.xhtml#ch13_sec_002"/></ncx:navPoint></ncx:navPoint>
+<ncx:navPoint id="NavPoint-102" playOrder="102"><ncx:navLabel><ncx:text>14 Launching a new website</ncx:text></ncx:navLabel><ncx:content src="content/20_chapter14.xhtml#ch14_sec_001"/>
+<ncx:navPoint id="NavPoint-103" playOrder="103"><ncx:navLabel><ncx:text>Five stages of a new website</ncx:text></ncx:navLabel><ncx:content src="content/20_chapter14.xhtml#ch14_h2_001"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-104" playOrder="104"><ncx:navLabel><ncx:text>Summary</ncx:text></ncx:navLabel><ncx:content src="content/20_chapter14.xhtml#ch14_h2_002"/></ncx:navPoint>
+<ncx:navPoint id="NavPoint-105" playOrder="105"><ncx:navLabel><ncx:text>Notes</ncx:text></ncx:navLabel><ncx:content src="content/20_chapter14.xhtml#ch14_sec_002"/></ncx:navPoint></ncx:navPoint>
+<ncx:navPoint id="NavPoint-106" playOrder="106"><ncx:navLabel><ncx:text>Index</ncx:text></ncx:navLabel><ncx:content src="content/21_index01.xhtml#index_sec_001"/></ncx:navPoint></ncx:navMap>
+</ncx:ncx>

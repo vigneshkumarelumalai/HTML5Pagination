@@ -1,0 +1,583 @@
+<?xml version="1.0"?>
+<html xmlns:epub="http://www.idpf.org/2007/ops" xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB">
+<head>
+<title>09 Testing your hypothesis</title>
+<meta charset="UTF-8"/>
+<link href="../koganpage.css" rel="stylesheet" type="text/css"/>
+</head>
+<body><section id="ch09_sec_001" class="chapter" epub:type="chapter" role="doc-chapter" aria-labelledby="ch09_h1_001">
+<header>
+<h1 id="ch09_h1_001" class="title" epub:type="title"><span id="page-151" role="doc-pagebreak" aria-label=" Page 151. " epub:type="pagebreak"/><span class="ordinal number" id="ch09_num_001" epub:type="ordinal">09</span> Testing your hypothesis</h1>
+</header>
+<p class="text-fo">There was a time when scurvy was thought to be caused by laziness. One of the first visible symptoms is intense, debilitating fatigue.<sup><a epub:type="noteref" role="doc-noteref" href="#ch09_en1" id="ch09_enx1">1</a></sup> Soon, the gums start to swell, to the point of bulging over whatever remains of the teeth. One surgeon, having contracted the disease himself, took a knife to his own gums to release the black blood. And that&#x2019;s just the beginning &#x2013; the signature of scurvy is the &#x2018;disintegration of the body&#x2019;.<sup><a epub:type="noteref" role="doc-noteref" href="#ch09_en2" id="ch09_enx2">2</a></sup></p>
+<p class="text">A breakthrough in the fight against scurvy came in 1747, when a naval doctor did an experiment aboard HMS <i>Salisbury</i>. A group of 12 sailors, all suffering from scurvy, was split into six pairs of two. The pairs were kept in similar conditions and fed the same diet. But each pair was given a different dietary supplement. Only two sailors eventually made a recovery. Both were in the same group &#x2013; the ones who received a daily dose of citrus fruit.</p>
+<p class="text">And so, James Lind conducted the first recorded clinical trial. By changing just one variable &#x2013; dietary supplement &#x2013; he was able to monitor its effect on another variable, the medical condition of those sailors. He wrote: &#x2018;(The) most sudden and visible good effects were perceived from the use of the oranges and lemons; one of those who had taken them, being at the end of six days fit for duty&#x2026; The other was the best recovered of any in his condition; and being now deemed pretty well, was appointed nurse to the rest of the sick.&#x2019;<sup><a href="#ch09_en3" id="ch09_enx3">3</a></sup></p>
+<section aria-labelledby="ch09_h2_001">
+<h2 id="ch09_h2_001" class="head-a">Online experimentation</h2>
+<p class="text-fo">In this book, we use the terms <i>experimentation</i> and <i>A/B testing</i> interchangeably. An A/B test is one type of experiment.</p>
+<p class="text">By now, you are already familiar with the concept of A/B testing. It&#x2019;s showing one variation to half of your audience, and another variation to the other half, to see which one performs better. You&#x2019;ll find a more comprehensive explanation later in this chapter. It&#x2019;s also called an <i>online controlled experiment</i> (OCE), split testing, bucket testing and a few other names.</p>
+<p class="text"><span id="page-152" role="doc-pagebreak" aria-label=" Page 152. " epub:type="pagebreak"/>Experimentation can be defined as <b>the manipulation of one or more variables such that its effect on other variable(s) can be measured</b>.<sup><a epub:type="noteref" role="doc-noteref" href="#ch09_en4" id="ch09_enx4">4</a></sup> In the opening story, James Lind manipulated the dietary supplement of sailors to measure its effect on their health.</p>
+<p class="text">From the previous chapter, you know that a hypothesis is a statement of cause and effect. If we do <i>x</i>, we expect to see <i>y</i>. You test and validate that with an experiment. So it&#x2019;s a mechanism by which to <b>establish causality</b>, that is, one thing caused another thing to happen.</p>
+<p class="text">Suppose, for example, that a business observes a sharp rise in revenue following the launch of a website redesign. They pat themselves on the back and reward the designers handsomely. The pattern is clear: immediately after the new website went live, revenue went up. This is illustrated in the graph on the left in <a id="rch09_fig_001" href="#ch09_fig_001">Figure 9.1</a>.</p>
+<figure class="figure" id="ch09_fig_001"><figcaption>
+<p class="figure"><a href="#rch09_fig_001"><span class="label" epub:type="label">Figure</span> <span class="ordinal" epub:type="ordinal">9.1</span> Revenue trend of an imaginary business, showing the impact of launching a website redesign. From the graph on the left, it looks as if the new site is performing well. However, it turns out that this performance is linked to external variables in the competitive environment. The dotted line in the graph on the right represents the old design. It shows that the old design would have produced an even better result</a></p>
+</figcaption>
+<p class="figure-media"><img src="images/M09NF001.jpg" alt="Two graphs show the revenue trend of an imaginary business."/></p>
+<details id="ch09_fig_001_details">
+<summary>Figure 9.1 details</summary>
+<p class="figure-alt-long">The graph on the left shows a fluctuating trend line with a short and gradual rise and fall . The graph on the right shows a dotted trend line which initially grows as the original trend line increases gradually above the original trend.</p>
+</details>
+</figure>
+<p class="text-fo">However, the relaunch wasn&#x2019;t the only thing that changed in this period. On the day that the site switched over, a key competitor shut down operations. Those customers now had to go to another supplier, to the benefit of our imaginary business. Had they kept a control group of visitors on their &#x2018;old&#x2019; website, they would have seen the graph on the right. The new website is actually underperforming, and revenue would have been even higher with the old design.</p>
+<p class="text">An experiment has the following elements:</p>
+<ul class="list-bullet"><li><p class="list-bullet">Control group</p></li>
+<li><p class="list-bullet">Treatment group</p></li>
+<li><p class="list-bullet"><span id="page-153" role="doc-pagebreak" aria-label=" Page 153. " epub:type="pagebreak"/>something that changes (independent variable);</p></li>
+<li><p class="list-bullet">something believed to be affected by that change (dependent variable);</p></li>
+<li><p class="list-bullet">a way to measure this effect (metric).</p></li>
+</ul>
+<p class="text-fo">Let&#x2019;s look at each of these in a bit more detail.</p>
+<section aria-labelledby="ch09_h3_001">
+<h3 id="ch09_h3_001" class="head-b">Control and treatment groups</h3>
+<p class="text-fo">How can you know that an observed uplift in an experiment is not the result of some external factor, such as a marketing campaign that coincided with the test?</p>
+<p class="text">This is a question we often hear. It reflects an enormous misunderstanding of even the basics of experimentation.</p>
+<p class="text">With an A/B test, the population (ie the visitors on your site) is split into two groups. This happens through a process of <b>randomization</b>, which means that visitors don&#x2019;t have control over whether they will see Variation A or B. They don&#x2019;t even know that they have been assigned to a specific variation.</p>
+<p class="text">The <b>control group</b> will see the original experience, without any changes applied to it. This is called the <i>control</i>, and typically it would be Variation A. The <b>treatment group</b> will see Variation B, the version where changes have been applied, also called the <i>treatment</i> or challenger.</p>
+<p class="text">Colin McFarland, who&#x2019;s led experimentation at <a href="https://www.booking.com/"><span class="url-hyperlink">Booking.com</span></a>, Skyscanner and Netflix, sees an experiment as &#x2018;a means of gathering data to compare a theory against reality&#x2019;.<sup><a epub:type="noteref" role="doc-noteref" href="#ch09_en5" id="ch09_enx5">5</a></sup> Control (Variation A) is a view of the current reality. Variation B is a view of how you think that reality may be improved, as outlined in your hypothesis.</p>
+<p class="text">Because nothing changes for the control group, it provides a benchmark against which to compare Variation B. Both groups are equally exposed to any and all external factors &#x2013; marketing campaigns, competitive forces, good or bad company news and so on. If the behaviour of the treatment group is significantly different, it can only be as a result of the change(s) in the treatment.</p>
+</section>
+<section aria-labelledby="ch09_h3_002">
+<h3 id="ch09_h3_002" class="head-b">Independent variable and dependent variable</h3>
+<p class="text-fo">The <b>independent variable</b> is the thing(s) you change in the treatment. It is what makes your variation different from the control.</p>
+<p class="text">The independent variable is expected to have an effect on the <b>dependent variable</b>. You have little or no control over the dependent variable, but it is at the centre of your attention. You are very interested to see what happens to it.</p>
+<p class="text"><span id="page-154" role="doc-pagebreak" aria-label=" Page 154. " epub:type="pagebreak"/>If you have only one independent variable in an experiment, you can pinpoint precisely what caused any observed effect. As you introduce more independent variables, this becomes increasingly difficult to do. We return to this later in the chapter.</p>
+</section>
+<section aria-labelledby="ch09_h3_003">
+<h3 id="ch09_h3_003" class="head-b">Metrics</h3>
+<p class="text-fo">Metrics are the measuring sticks for your experiment. They enable you to determine whether the change in the treatment had any effect on the dependent variable. They can also show you how the variation has changed user behaviour.</p>
+<p class="text">Metrics can measure either macro conversions or micro conversions. A <i>macro conversion</i> refers to the final conversion event &#x2013; placing an order. <i>Micro conversions</i> are actions that users take higher up the funnel that may lead to a macro conversion.</p>
+<p class="text">Examples of micro conversions are:</p>
+<ul class="list-bullet"><li><p class="list-bullet">Visits to PDP</p></li>
+<li><p class="list-bullet">Scroll to certain area of page</p></li>
+<li><p class="list-bullet">Interact with Size/Colour selector</p></li>
+<li><p class="list-bullet">Click on &#x2018;Add to Cart&#x2019; button</p></li>
+<li><p class="list-bullet">Visits to Basket Page.</p></li>
+</ul>
+<p class="text-fo">Though the terms KPI and metric are often used interchangeably, there are subtle differences. <i>KPIs</i> are &#x2018;quantifiable metrics which reflect the performance of an organization in achieving its goals and objectives&#x2019;,<sup><a href="#ch09_en6" id="ch09_enx6">6</a></sup> whereas <i>metrics</i> are, simply, what you measure.<sup><a epub:type="noteref" role="doc-noteref" href="#ch09_en7" id="ch09_enx7">7</a></sup> All KPIs are metrics, but not all metrics are KPIs.</p>
+<p class="text">In experimentation then, KPIs are top-level metrics which align the testing programme with the strategic goals of the business.<sup><a epub:type="noteref" role="doc-noteref" href="#ch09_en8" id="ch09_enx8">8</a></sup> In the context of e-commerce, typical KPIs are RPV (revenue per visitor), AOV (average order value) and conversion rate. <a id="rch09_fig_002" href="#ch09_fig_002">Figure 9.2</a> shows how they are related (see the box &#x2018;E-commerce optimization KPIs&#x2019;).</p>
+<p class="text">One of these three KPIs will usually serve as the primary test metric is used to decide the outcome of an experiment: if it goes down, the hypothesis is rejected &#x2013; even if another metric in the same test went up.</p>
+<p class="text">Causality is also established by monitoring the primary metric. If the change in your treatment is the only difference between Variation A and <span id="page-155" role="doc-pagebreak" aria-label=" Page 155. " epub:type="pagebreak"/>Variation B, any statistically significant swing in the primary metric must be caused by that change.<sup><a epub:type="noteref" role="doc-noteref" href="#ch09_en9" id="ch09_enx9">9</a></sup></p>
+<p class="text">As important as the primary metric is, it provides a one-dimensional view. It tells only a small part of the story, whether a test is positive or negative. The bigger, often more interesting story is how the test changed user behaviour such to induce the observed outcome. To build this more comprehensive narrative, you will track a range of <b>secondary metrics</b>. Those tend to be more localized to the area where the change has been introduced. They may also include <b>guardrail metrics</b>,<sup><a href="#ch09_en10" id="ch09_enx10">10</a></sup> ones which you don&#x2019;t want to see negatively affected.</p>
+<p class="text">Consider the example of an experiment on the PDP of a shoe retailer, as shown in <a href="14_chapter08.xhtml#ch08_fig_001">Figures 8.1</a>&#x2013;<a href="14_chapter08.xhtml#ch08_fig_003">8.3</a> in the previous chapter. The primary metric in this case was RPV. Secondary metrics included AOV and conversion rate, to provide context around changes in RPV. Did more users buy products, or did the same number of customers spend more money, or both? Other secondary metrics would aim to explain user behaviour, such as clicks on the &#x2018;Add to Cart&#x2019; button as well as clicks on the various tabs further down the page.</p>
+<p class="text">A guardrail metric used in that case study was &#x2018;product returns&#x2019;, relying on external data. The retailer had noticed a pattern of customers buying two pairs of shoes at a time to try on at home, and then returning one pair. It was important to monitor this, as the &#x2018;free returns&#x2019; policy could cause profit margin to be degraded as a consequence of the test.</p>
+<aside id="ch09_aside_001" class="box" role="complementary" aria-labelledby="ch09_boxtitle_001">
+<h4 id="ch09_boxtitle_001" class="title" epub:type="title">E-commerce optimization KPIs</h4>
+<p class="text-fo">KPIs are top-level metrics which align your testing programme with the strategic goals of the business.<sup><a epub:type="noteref" role="doc-noteref" href="#ch09_en11" id="ch09_enx11">11</a></sup></p>
+<p class="text">In e-commerce optimization, important KPIs are RPV, AOV and conversion rate (<a href="#ch09_fig_002">Figure 9.2</a>). One of these often serves as a primary test metric.</p>
+<figure class="figure" id="ch09_fig_002"><figcaption>
+<p class="figure"><a href="#rch09_fig_002"><span class="label" epub:type="label">Figure</span> <span class="ordinal" epub:type="ordinal">9.2</span> E-commerce KPIs used as primary metrics in experimentation. RPV is a composite metric, a product of AOV &#x00D7; Conversion rate. It is a measure of how much revenue is earned per visitor on the site, including visitors who didn&#x2019;t make a purchase. When choosing a primary metric, always get as close as possible to revenue</a></p>
+</figcaption>
+<p class="figure-media"><img src="images/M09NF002.jpg" alt="A block diagram classifies revenue. The revenue is classified into revenue per visitor (RPV) and total visitors, which is given in dotted box. Revenue per visitor is classified into average order value (AOV) and conversion rate."/></p>
+</figure>
+<p class="text">R<b/><b>evenue</b> <b>per visitor</b>, or sometimes <i>average revenue per user</i> (ARPU) measures the average amount of money earned per visitor to your site, including those who didn&#x2019;t purchase. It&#x2019;s a composite metric that rolls up two other KPIs &#x2013; conversion rate and AOV.</p>
+<blockquote>
+<p class="block-quote">RPV = Conversion rate  &#x00D7;  Average order value</p>
+</blockquote>
+<p class="text-fo"><b>Average</b> <b>order value</b> measures the average amount of money your customers spend per transaction. Earning more from the same number of transactions is a good way to increase overall revenue and profitability.</p>
+<blockquote>
+<p class="block-quote"><span id="page-156" role="doc-pagebreak" aria-label=" Page 156. " epub:type="pagebreak"/>AOV = Revenue / Number of transactions</p>
+</blockquote>
+<p class="text-fo"><b>Conversion</b> <b>r</b><b>ate</b> measures the percentage of all visitors who made a purchase on your site. If using revenue-base metrics is not feasible (more on this later), conversion rate is next in line to be used as primary metric.</p>
+<blockquote>
+<p class="block-quote">Conversion rate = Number of transactions / Number of visitors</p>
+</blockquote>
+<p class="head-a">A note about conversion rate</p>
+<p class="text-fo">Conversion rate is one of the most misunderstood metrics in e-commerce. There are times when a high conversion rate gives you less money. Take a look at these two (deliberately simplified) scenarios:</p>
+<ol class="list-number"><li><p class="list-number">Scenario A: Four visitors come to your site. One of them places an order for &#x00A3;50 &#x2013; that&#x2019;s a 25 per cent conversion rate.</p></li>
+<li><p class="list-number">Scenario B: Again you have four visitors, but this time two place an order &#x2013; that&#x2019;s a 50 per cent conversion rate, a whopping 100 per cent increase. However, in this case each customer spends only &#x00A3;10. That&#x2019;s &#x00A3;20 in total revenue, less than half you earned in Scenario A.</p></li></ol>
+<p class="text-fo">Which would you rather have &#x2013; the scenario with 25 per cent conversion rate or the one with 50 per cent conversion rate? If you&#x2019;re unsure, ask the accountant. You can&#x2019;t pay the bills with conversion rate.</p>
+<p class="text"><span id="page-157" role="doc-pagebreak" aria-label=" Page 157. " epub:type="pagebreak"/>Mechanisms like upselling and cross-selling can have an effect on AOV, but not on conversion rate. Measuring only conversion rate might lead you to the wrong conclusion if you tested the introduction of an upselling widget.</p>
+<p class="text">As you can see, conversion rate can be misleading.</p>
+<p class="head-a">Test revenue is not site-wide revenue</p>
+<p class="text-fo">Any revenue uplift reported by the testing platform relates to the page on which the test was run. That is not the same as overall site-wide impact. To get the complete picture, you may have to decrement the reported value by the page revenue multiplier, as explained in <a href="13_chapter07.xhtml#ch07_sec_001">Chapter 7</a>.</p>
+<p class="text">For example, a test on your homepage reports a 10 per cent RPV increase. However, this uplift cannot be applied to everyone on the site, only the segment of visitors who pass through that page. If homepage revenue makes up 2 per cent of the total site-wide amount (revisit <a href="#ch09_fig_002">Figure 7.2</a>), the site-wide effect of this test is 2 per cent and not 10 per cent [ie 10% &#x00D7; 2%].</p>
+</aside>
+</section>
+</section>
+<section aria-labelledby="ch09_h2_002">
+<h2 id="ch09_h2_002" class="head-a">Types of online experiments</h2>
+<p class="text-fo">There are mainly three different types of online experiments:</p>
+<ul class="list-bullet"><li><p class="list-bullet">A/B testing or A/B/n testing;</p></li>
+<li><p class="list-bullet">multivariate testing (MVT);</p></li>
+<li><p class="list-bullet">multi-arm bandit (MAB)</p></li>
+</ul>
+<section aria-labelledby="ch09_h3_004">
+<h3 id="ch09_h3_004" class="head-b">A/B and A/B/<i>n</i> testing</h3>
+<p class="text-fo">This is the staple of the industry, and most of your tests will fall into this category. It&#x2019;s simply comparing one variation against another, where 50 per cent of the audience see the control (the original, usually Version A) and the rest see the treatment or challenger (Variation B).</p>
+<p class="text">If there is more than one variation, it is known as an A/B/<i>n</i> test. If you have enough traffic to split up into more than two audiences, this approach has some advantages. First, you can move faster by fitting more than one idea into the same testing slot. Second, by directly comparing different treatments against each other, the opportunity for insight generation is much bigger.</p>
+<p class="text">Over time, you measure the relative performance of each variation against the primary metric. This gives you the data to decide which one should be kept.</p>
+<p class="text"><span id="page-158" role="doc-pagebreak" aria-label=" Page 158. " epub:type="pagebreak"/>There&#x2019;s a lot that you can A/B test, for example:</p>
+<ul class="list-bullet"><li><p class="list-bullet">UI elements such as images, forms, buttons and layout;</p></li>
+<li><p class="list-bullet">copy elements such as headlines, sales copy, micro messaging;</p></li>
+<li><p class="list-bullet">algorithms and product recommendation systems;</p></li>
+<li><p class="list-bullet">a radical redesign of one page;</p></li>
+<li><p class="list-bullet">redesign of a sequence of steps;</p></li>
+<li><p class="list-bullet">product prices.</p></li>
+</ul> 
+</section>
+<section aria-labelledby="ch09_h3_005">
+<h3 id="ch09_h3_005" class="head-b">Multivariate testing</h3>
+<p class="text-fo">A number of variables are tested at the same time with MVT, dynamically mixed together in different combinations. Say you want to find the best headline and hero image combination. Load two alternative headlines and two alternative images into the testing tool, and it will present all possible combinations on the fly.</p>
+<p class="text">The major drawback of MVT is that it demands exponentially bigger sample sizes. Frankly, this puts it out of reach of most websites.</p>
+<p class="text">The number of variations in MVT is determined by this formula:</p>
+<blockquote>
+<p class="block-equation">[Nr of variations for element A] &#x00D7; [Nr of variations for element B]&#x2026; = [Total nr of variations]<sup><a href="#ch09_en12" id="ch09_enx12">12</a></sup></p>
+</blockquote>
+<p class="text-fo">In the above example we have three headline variations and three image variations, counting the original. Total number of variations in this test is therefore 3 &#x00D7; 3 = 9. So your population will be split into nine buckets as opposed to two buckets like an A/B test. If the experiment added a third element, say the &#x2018;Add To Cart&#x2019; button, it would bring the total to 3 &#x00D7; 3 &#x00D7; 3 = 27 variations!</p>
+<p class="text">If you do have enough traffic to warrant MVT &#x2013; and you probably don&#x2019;t &#x2013; the number one benefit is accelerated learning. It&#x2019;s a way of pointing out the most profitable levers on a page. Use MVT to identify those elements, then target these with standard A/B tests.</p>
+ </section>
+ <section>
+ <h3 id="ch09_h3_006" class="head-b">Multi-arm bandit</h3>
+<p class="text-fo">This relies on machine learning algorithms to adjust the amount of exposure to test variations, depending on performance. More visitors will automatically be bucketed into winning variations, while losing variations would gradually start seeing less traffic.</p>
+<p class="text"><span id="page-159" role="doc-pagebreak" aria-label=" Page 159. " epub:type="pagebreak"/>Effectively outsourcing your decision to a machine removes the risk of prolonged exposure to a losing variation. However, that decision is often more nuanced and may require different layers of information and insight.</p>
+<p class="text">Jeremy Gu, Data Science Manager at Uber, explains that multi-armed bandit (MAB) and A/B testing serve different purposes. A/B testing is better in terms of decision making. At Uber, MAB is used to quickly find the best treatment among a large group of alternatives. &#x2018;However, MAB is undesirable to accurately estimate treatment effects for groups with small datasets&#x2019;, he cautions.<sup><a epub:type="noteref" role="doc-noteref" href="#ch09_en13" id="ch09_enx13">13</a></sup></p>
+<p class="text">On an e-commerce site, a visitor may arrive today for the first time, come back tomorrow to do more research and finally make the purchase next week. An A/B test would &#x2018;catch&#x2019; this conversion, whereas the MAB may make a decision before the conversion event.</p>
+<p class="text">To a degree, MAB also assumes that conversion propensity holds constant over time, which is often not the case. For example, weekdays and weekends usually see different patterns, and time of day also plays a role.</p>
+<p class="text">When the experimentation time frame is not well suited to A/B testing, MAB may be a better option &#x2013; a campaign related to Black Friday, for example, where the outcome of an A/B test would come too late to be fully exploited.</p>
+</section>
+</section>
+<section aria-labelledby="ch09_h2_003">
+<h2 id="ch09_h2_003" class="head-a">Big or small changes?</h2>
+<p class="text-fo">Should you be testing big, bold radical changes or small alterations?</p>
+<p class="text">The driving philosophy behind small-change testing is incremental improvement, and the buzz phrase <i>marginal gains</i>. These tests require less effort so presumably you can do more of them, continuously banking small uplifts all the way. All those &#x2018;almost nothings&#x2019; eventually add up to something.</p>
+<p class="text">However, small changes often lack the muscle to deliver any noticeable effect, yielding inconclusive test results. This wastes weeks of testing time, and inconclusive results make it harder to draw meaningful insights. Even if you do get some small wins this way, some say it&#x2019;s an &#x2018;illusion of progress&#x2019; if you&#x2019;re getting there one tiny step at a time.<sup><a epub:type="noteref" role="doc-noteref" href="#ch09_en14" id="ch09_enx14">14</a></sup></p>
+<p class="text">Radical changes, such as the complete redesign of a page, are more likely to bring about a significant difference in behaviour. Therefore, they are more likely to cause a noticeable effect &#x2013; either positive or negative.</p>
+<p class="text">But radical testing does not come without drawbacks. Changing more than one variable means you can&#x2019;t pinpoint cause and effect. One of the variables might in fact be pulling the overall result down, and you&#x2019;d be none the wiser.</p>
+<p class="text"><span id="page-160" role="doc-pagebreak" aria-label=" Page 160. " epub:type="pagebreak"/>Making radical changes also demands more time and resources. If it delivers a positive uplift, the investment pays off. If it bombs out, not only do you not have an uplift but it&#x2019;s also more difficult to learn from it.</p>
+<p class="text">One problem is that &#x2018;incremental testing&#x2019; is often misinterpreted as running pointless experiments, like changing button colours. That&#x2019;s not what we are referring to here.</p>
+<section aria-labelledby="ch09_h3_007">
+<h3 id="ch09_h3_007" class="head-b">Making the choice</h3>
+<p class="text-fo">There is a trade-off between potential effect (from radical testing) and more precise learning (incremental testing). With incremental testing, you can create layers of insight with every iteration, which gradually build up to a big win.</p>
+<p class="text">Amazon&#x2019;s Jeff Bezos has a clear view on this, which is supported by our direct experience. The few big wins from bold tests will more than compensate for the ones that didn&#x2019;t win: &#x2018;Outsized returns often come from betting against conventional wisdom, and conventional wisdom is usually right. Given a 10 per cent chance of a 100 times payoff, you should take that bet every time. But you&#x2019;re still going to be wrong 9 times out of 10&#x2026; Big winners pay for so many experiments.&#x2019;<sup><a href="#ch09_en15" id="ch09_enx15">15</a></sup></p>
+<p class="text">Our advice is to strive for a balance, leaning towards the more innovative end of the spectrum. Experimentation allows you to do precisely that: push the envelope. Mark Zuckerberg of Facebook understands this too. He says many of his decisions are based on this question: &#x2018;Okay, is this going to destroy the company? Because if not, then let them test it.&#x2019;<sup><a href="#ch09_en16" id="ch09_enx16">16</a></sup></p>
+<p class="text">You need the learnings from small tests to inform the bigger ideas, though. If you only do big tests, it will slow down your roadmap. So you need both.</p>
+<p class="text">At the start of your programme, things are also different. Naturally you&#x2019;d want to start with the list of ideas in the High Value, Low Effort quadrant of <a href="#ch09_fig_001">Figure 7.1</a>, but usually that&#x2019;s a short list. If you find it hard to move the dial with sensible incremental improvements, it&#x2019;s time to be bolder.</p>
+<p class="text">If the design or structure of the current template is too limiting for the changes that you want to make, it&#x2019;s a clear sign that you need to take a more radical approach. Equally, if you reach a point of diminishing returns after making good incremental gains at first, it&#x2019;s time to go big. Once you&#x2019;ve found a new template that works, you can continue optimizing it with incremental testing.</p>
+<p class="text">This is known as the &#x2018;local maximum&#x2019;. It means that, relative to the tests you have been running, you have reached the maximum, but not relative to all the potential gains if you started from a different base. It&#x2019;s like climbing up the small hill in <a id="rch09_fig_003" href="#ch09_fig_003">Figure 9.3</a>, whereas in fact there&#x2019;s a higher hill with a bigger upside a short distance away.</p>
+<figure class="figure" id="ch09_fig_003"><figcaption>
+<p class="figure"><a href="#rch09_fig_003"><span class="label" epub:type="label"><span id="page-161" role="doc-pagebreak" aria-label=" Page 161. " epub:type="pagebreak"/>Figure</span> <span class="ordinal" epub:type="ordinal">9.3</span> Local and global maxima</a></p>
+</figcaption>
+<p class="figure-media"><img src="images/M09NF003.jpg" alt="A surface with two peaks is shown. The small peak is labeled local maximum, possible with incremental testing. The highest peak is labeled global maximum, possible with radical testing."/></p>
+</figure>
+<p class="text-fo">Analyst Daniel Lee talks about &#x2018;getting close to your superior point of optimization, and then iterating around this point&#x2019;.<sup><a epub:type="noteref" role="doc-noteref" href="#ch09_en17" id="ch09_enx17">17</a></sup> You find your optimal position in the grid (<a id="rch09_fig_004" href="#ch09_fig_004">Figure 9.4</a>) by incrementally testing towards each area.<sup><a epub:type="noteref" role="doc-noteref" href="#ch09_en18" id="ch09_enx18">18</a></sup> In this illustration, visitors react better to the price guarantee than to the other value claims. The oval represents the area where you would iterate around this winning theme. Future experiments might iteratively test different attributes of <span id="page-162" role="doc-pagebreak" aria-label=" Page 162. " epub:type="pagebreak"/>the same theme, for example location on the page or in the funnel, messaging and creative.</p>
+<figure class="figure" id="ch09_fig_004"><figcaption>
+<p class="figure"><a href="#rch09_fig_004"><span class="label" epub:type="label">Figure</span> <span class="ordinal" epub:type="ordinal">9.4</span> Strategic theme exploration</a></p>
+</figcaption>
+<p class="figure-media"><img src="images/M09NF004.jpg" alt="The strategic exploration lists &#x2018;price guarantee?&#x2019; (circled), &#x2018;bundles?&#x2019;, &#x2018;free extended warranties?&#x2019;, and &#x2018;value proposition?&#x2019; in the four quadrants. Two two-sided arrows point to the quadrants."/></p>
+<p class="figure-credits" role="doc-credit" epub:type="credit"><span class="txt-capitalize"><b>Source</b></span> Adapted from Daniel Lee</p>
+</figure>
+</section>
+<section aria-labelledby="ch09_h3_008">
+<h3 id="ch09_h3_008" class="head-b">Exclusion testing</h3>
+<p class="text-fo">Also called an existence test, exclusion testing hides an element on a page to quantify the effect of a given page element. It&#x2019;s a good way to identify conversion levers.</p>
+<p class="text">Especially at the start of your optimization programme, when your purpose is accelerating insight generation, there&#x2019;s no risk of small &#x2018;learning tests&#x2019; hijacking valuable testing slots.</p>
+<p class="text">The purpose of this type of test is not to get a win. If it shows an uplift, you can replace this component with something more valuable &#x2013; white space, even. The results can be surprising, counter-intuitive.</p>
+<p class="text">If the test is negative, it&#x2019;s an indication that the element you hid in the test is an important conversion lever. Can you do more with it? What does it teach you about user behaviour and preferences?</p>
+<p class="text">If results are inconclusive, it could be a sign that the element can work harder for you or, conversely, that the space it takes up can be put to better use.</p>
+<p class="text">Here&#x2019;s an interesting example. It&#x2019;s a truism that money-back guarantees and friendly returns policies give people the reassurance they need to buy, so they bump up sales. And most of the time, that&#x2019;s what happens.</p>
+<p class="text">So it was a surprise when we took a guarantee off the website of one of our clients and saw an increase in revenue. Why? The site sold gifts for children. When we investigated, we found out that many sales were to grandparents buying for their grandchildren. The last thing a grandfather wants to contemplate when buying a gift for his grandson is that things will go wrong and, heaven forbid, the gift has to be returned. The money-back guarantee planted a seed of doubt.</p>
+<p class="text">With this type of experiment, always test only one variable at a time so that you can isolate the value of that particular thing being tested.</p>
+</section>
+</section>
+<section aria-labelledby="ch09_h2_004">
+<h2 id="ch09_h2_004" class="head-a">Statistics for optimizers</h2>
+<p class="text-fo">When you interpret test results, you are making inferences about the wider population based on what you&#x2019;ve observed from a sample. This is where statistics enters the frame. They can help you answer questions like these:</p>
+<ul class="list-bullet"><li><p class="list-bullet"><span id="page-163" role="doc-pagebreak" aria-label=" Page 163. " epub:type="pagebreak"/>How confident can you be about those extrapolations?</p></li>
+<li><p class="list-bullet">Is a reported win really a win?</p></li>
+<li><p class="list-bullet">Can you expect to see the same uplifts once the change goes live on the site?</p></li>
+</ul>
+<p class="text-fo">To improve your ability to interpret test results and pick the real winners, it is time to gain a basic understanding of the relevant principles. It&#x2019;s a complex area beyond the scope of this book, but our aim here is to give you a reasonable working knowledge.</p>
+<section>
+<h3 class="head-b">Statistical significance</h3>
+<p class="text-fo">First, let&#x2019;s clear up a common misconception. Statistical significance does not tell you that one variation is better or worse than the other. Nor is it an indication that a test is ready to be called.</p>
+<p class="text">Statistical significance tells you whether there really is a difference between the control and variation, or whether the result may be down to random chance. As Daniel Kahneman explains in <i>Thinking, Fast and Slow</i>: &#x2018;We are prone to overestimate how much we understand about the world and to underestimate the role of chance in events.&#x2019;<sup><a href="#ch09_en19" id="ch09_enx19">19</a></sup></p>
+<p class="text">Optimizely defines statistical significance as an answer to this question, which gets straight to the point: &#x2018;How likely is it that my experiment results will say I have a winner when I actually don&#x2019;t?&#x2019;<sup><a href="#ch09_en20" id="ch09_enx20">20</a></sup></p>
+<p class="text">Standard industry practice is to use 95 per cent statistical significance as a threshold. It means there is a 5 per cent chance of being a fluke. So, 1 out of 20 &#x2018;confident&#x2019; wins will be false.</p>
+<p class="text">Statistical significance is used by many as a comfort blanket, but there are dangers in relying on this alone. It should always be seen in the context of other factors discussed below.</p>
+<p class="text">Moreover, <i>Harvard Business Review</i> points out that statistical significance does not equate to business relevance. The insistence on 95 per cent statistical significance has been inherited from science, but many business decisions don&#x2019;t require this level of confidence.<sup><a epub:type="noteref" role="doc-noteref" href="#ch09_en21" id="ch09_enx21">21</a></sup></p>
+</section>
+<section aria-labelledby="ch09_h3_009">
+<h3 id="ch09_h3_009" class="head-b">Statistical power</h3>
+<p class="text-fo">A few years ago, a PhD wrote a hard-hitting paper claiming that most winning A/B test results were &#x2018;illusory&#x2019;.<sup><a epub:type="noteref" role="doc-noteref" href="#ch09_en22" id="ch09_enx22">22</a></sup> Though they may have been statistically significant, those tests were &#x2018;under-powered&#x2019;.</p>
+<p class="text"><i><span id="page-164" role="doc-pagebreak" aria-label=" Page 164. " epub:type="pagebreak"/>Statistical power</i> is the ability to detect an effect, if there really is an effect to be detected in the first place.</p>
+<p class="text">To understand it better, consider this scenario: Tossing a fair coin, there&#x2019;s a 50/50 chance of landing either heads or tails. If the first dozen or so flicks skew one way, you&#x2019;d probably expect it to settle down at around 50 per cent after enough flips. Intuitively, you want to increase the sample (number of flips) before accepting the result.</p>
+<p class="text">Sample size is an important factor in determining whether an experiment has sufficient statistical power. As we saw in <a href="13_chapter07.xhtml#ch07_sec_001">Chapter 7</a>, sample size is in part determined by desired minimum detectable effect (MDE).</p>
+<p class="text">So to increase the power of a test, to avoid it being &#x2018;under-powered&#x2019;, you could increase sample size or increase effect size. Practically, the former is more within your control. You can let more visitors into the test by running it for longer, for example.</p>
+<p class="text">An under-powered test holds the risk of declaring a &#x2018;confident&#x2019; winner when it isn&#x2019;t a win in reality. This is known as a <i>false positive</i>, or Type I error in statistical jargon. Fortunately, modern experimentation platforms will only declare a win if both statistical significance and statistical power thresholds are met (<a id="rch09_fig_005" href="#ch09_fig_005">Figure 9.5</a>).</p>
+<figure class="figure" id="ch09_fig_005"><figcaption>
+<p class="figure"><span id="page-165" role="doc-pagebreak" aria-label=" Page 165. " epub:type="pagebreak"/><a href="#rch09_fig_005"><span class="label" epub:type="label">Figure</span> <span class="ordinal" epub:type="ordinal">9.5</span> A dashboard of Qubit&#x2019;s Digital Experience Platform shows the tension between statistical power and statistical significance. Despite observing a high probability (99.86 per cent) of a strong lift, the experiment &#x2018;needs more data&#x2019; to say that there really is an effect</a></p>
+</figcaption>
+<p class="figure-media"><img src="images/M09NF005.jpg" alt="A screenshot shows the dashboard of Qubit&#x2019;s digital experience platform. The screenshot shows a donut chart on the left and data on expected uplift range, probability of uplift and revenue per visitor on the right."/></p>
+</figure>
+<p class="text-fo">To avoid the frustration of under-powered tests clogging up your testing slots, or declaring false positives, calculate the minimum required sample size upfront. Refer back to <a href="13_chapter07.xhtml#ch07_sec_001">Chapter 7</a> for details on how to do this.</p>
+</section>
+<section aria-labelledby="ch09_h3_010">
+<h3 id="ch09_h3_010" class="head-b">Confidence intervals</h3>
+<p class="text-fo">The nature of making inferences is that we can never be 100 per cent certain about it. The <i>confidence interval</i> is a measure of that certainty.</p>
+<p class="text">Your experimentation platform may report a range of values in addition to the stated uplift. That is the range within which the reported lift can fluctuate at 95 per cent statistical significance. For example, it may report 10 per cent (&#x00B1; 2 per cent) where the bit in brackets reflects the <i>margin of error</i>. As more data are gathered by the experiment, this margin should shrink to increase the level of certainty.</p>
+<p class="text">In <a href="#ch09_fig_005">Figure 9.5</a>, you can see that Qubit is reporting RPV at &#x00A3;1.35. It is flanked by values of &#x00A3;1.27 and &#x00A3;1.43, representing the lower and upper limits of the confidence interval at that point in time.</p>
+</section>
+</section>
+<section aria-labelledby="ch09_h2_005">
+<h2 id="ch09_h2_005" class="head-a"><span id="page-166" role="doc-pagebreak" aria-label=" Page 166. " epub:type="pagebreak"/>The test brief</h2>
+<p class="text-fo">Before launching a test, create a test-brief document to communicate all relevant details. This can take any form, but we find that a deck works well. It should contain the following:</p>
+<ul class="list-bullet"><li><p class="list-bullet">Name of the test</p></li>
+<li><p class="list-bullet">Testing slot</p></li>
+<li><p class="list-bullet">Screenshot of control</p></li>
+<li><p class="list-bullet">Screenshot of variation(s)</p></li>
+<li><p class="list-bullet">List of changes</p></li>
+<li><p class="list-bullet">Data and insights</p></li>
+<li><p class="list-bullet">Hypothesis</p></li>
+<li><p class="list-bullet">Primary metric</p></li>
+<li><p class="list-bullet">Secondary metrics</p></li>
+<li><p class="list-bullet">Target segment(s)</p></li>
+<li><p class="list-bullet">estimated test duration.</p></li>
+</ul>
+</section>
+<section aria-labelledby="ch09_h2_006">
+<h2 id="ch09_h2_006" class="head-a">When to stop a test</h2>
+<p class="text-fo">When a test is confidently winning or losing, the decision to stop is relatively easy &#x2013; simply follow the recommendations made by the testing platform. Just a few years ago, that would not have been our advice, but models constantly evolve and have become more intelligent.</p>
+<p class="text">But what do you do if a test has been running for a while and a recommendation has still not been made by the software?</p>
+<p class="text">If you stop too soon, you might never know if you made the wrong decision. Keeping it live for too long bears an opportunity cost, an argument in favour of stopping the test and moving on. Then again, preparing the next test also has a cost associated with it, so under certain conditions the better decision must be to extend.</p>
+<p class="text">In these situations, it&#x2019;s helpful to have clear stopping rules.</p>
+<p class="text">Start by calculating minimum required sample size, and work backwards from there to test duration. This was explained in <a href="13_chapter07.xhtml#ch07_sec_001">Chapter 7</a>. On the given day, review test performance and make a judgement call.</p>
+<p class="text"><span id="page-167" role="doc-pagebreak" aria-label=" Page 167. " epub:type="pagebreak"/>If the required sample has been reached, with neither control nor variation taking a clear lead, the test should be stopped and declared <b>inconclusive</b>. Even if the variation looked as if it was going to win at some point, the only thing that matters is what the picture looks like now.</p>
+<p class="text">The RPV graph in <a id="rch09_fig_006" href="#ch09_fig_006">Figure 9.6</a> shows a common pattern. The top line is the variation and the bottom line the control. It starts off looking promising for the variation. After a few days of the variation taking the lead, it may be tempting to stop the test. It might even reach 95 per cent statistical significance &#x2013; but remember, that&#x2019;s not an indication that one variation is better than the other.</p>
+<p class="text">After two weeks the winning variation has lost all that initial shine. Should you remain hopeful about the prospect of a win and keep it going? No. The most plausible explanation is that there never was any real difference between the two. What we observed initially were fluctuations which normalized over time as the proverbial coin was flipped more times. This is known as <b>regression to mean</b> (<a href="#ch09_fig_006">Figure 9.6</a>).</p>
+<figure class="figure" id="ch09_fig_006"><figcaption>
+<p class="figure"><span id="page-168" role="doc-pagebreak" aria-label=" Page 168. " epub:type="pagebreak"/><a href="#rch09_fig_006"><span class="label" epub:type="label">Figure</span> <span class="ordinal" epub:type="ordinal">9.6</span> A screenshot from a test result in Optimizely, illustrating regression to mean. This is a common pattern, so be careful of jumping to conclusions before the test has run its course</a></p>
+</figcaption>
+<p class="figure-media"><img src="images/M09NF006.jpg" alt="A screenshot shows a window titled conversion rate. Two trend lines are drawn for conversion rate. The horizontal axis shows date and the vertical axis ranges from 35 to 42 in unit increments."/></p>
+</figure>
+<p class="text-fo">If the variation has consistently outperformed control, there may be a case to extend its run &#x2013; or even <b>declare a win</b>.</p>
+<p class="text">First, check that the required sample has indeed been reached. If it has, it would suggest that the difference between the two variations is not big enough (yet?) to be statistically significant.</p>
+<p class="text">The testing platform may be holding out for the 95 per cent threshold to be achieved, but you know that it&#x2019;s not the only factor or even the most important one. If it&#x2019;s close to 95 per cent, it may be worth making the trade-off. How close? There is no answer, but definitely closer to 95 than 50.</p>
+<p class="text">Confidence interval is another important clue. If the margin of error is shrinking while the variation maintains the lead, this is a bullish indicator. If the overlap between the two sets of confidence intervals is still large, <b>extend test duration</b> by a week or two to allow more data in. If confidence intervals continue to shrink, consider calling it a win. However, if confidence intervals do not shrink, or if statistical significance starts to slip, consider it inconclusive and move on.</p>
+<p class="text">We usually run A/B tests for at least 14 days. Buying behaviour could fluctuate significantly depending on the day of the week, so we want to observe at least two full weeks and weekends. If there&#x2019;s reason to extend, this is done in increments of 7 days.</p>
+<p class="text">If your business is characterized by longer purchase cycles, 14 days may not be enough. Customers don&#x2019;t always make up their mind immediately and often visit the site multiple times before buying. A visitor can enter the test on Day 1 but delay the purchase until Day 20. If the test ended after 14 days, that conversion would not have been taken into account at all.</p>
+<p class="text"><span id="page-169" role="doc-pagebreak" aria-label=" Page 169. " epub:type="pagebreak"/>To get a steer on this, consult the <i>Time to Purchase</i> report in Google Analytics.</p>
+<section aria-labelledby="ch09_h3_011">
+<h3 id="ch09_h3_011" class="head-b">Relying on micro conversion metrics</h3>
+<p class="text-fo">Micro conversion metrics usually reach statistical significance before macro conversion metrics. This is because there are always more visitors higher up the funnel, and more micro conversion activity, which forms the basis of significance calculations.</p>
+<p class="text">If that happens, it may be tempting to declare a win based on a micro conversion metric. Avoid this as far as possible. Though a micro conversion might be positively correlated to a macro conversion, that does not imply causality. The only way to verify that your change in Variation B has a direct impact on the macro conversion is to monitor the effect on the macro conversion.</p>
+<p class="text">To explain the difference: In summer months, ice cream sales go up. The number of people drowning in swimming pools also increases, unfortunately. Both variables &#x2013; ice cream sales and deaths by drowning &#x2013; rise together, so there is positive <b>correlation</b>. However, there is no <b>causality</b>: ice cream sales do not cause people to drown. Warmer weather makes people more inclined to buy ice cream, and also more inclined to visit swimming pools. With more people in the water, there are more drownings compared to cooler months.</p>
+</section>
+</section>
+<section aria-labelledby="ch09_h2_007">
+<h2 id="ch09_h2_007" class="head-a">Testing on low-traffic sites</h2>
+<p class="text-fo">With all this talk about sample size, it may sound as if only big websites can benefit from experimentation. Without a doubt, higher traffic volumes are more suitable testing grounds.</p>
+<p class="text">What qualifies as a &#x2018;low traffic&#x2019; site? I was hoping you wouldn&#x2019;t ask that question. There are views on this &#x2013; some will say 100,000 monthly unique visitors, others have called it at 30,000 monthly unique visitors and fewer. Fundamentally, it&#x2019;s about how many visitors you can get into a test, but as you&#x2019;ve already seen, it also depends on the size of effect.</p>
+<p class="text">It&#x2019;s not at all impossible to experiment on smaller sites. Before jumping into testing, invest in thorough explorative analysis. This will help you to focus the roadmap on things that matter. Arrange a few usability testing sessions to identify potential roadblocks. Review session recordings. Speak to recent customers, fine-tune the value proposition.</p>
+<p class="text">Then, when you are ready to start testing, follow the suggestions below.</p>
+<section aria-labelledby="ch09_h3_012">
+<h3 id="ch09_h3_012" class="head-b"><span id="page-170" role="doc-pagebreak" aria-label=" Page 170. " epub:type="pagebreak"/>Go big</h3>
+<p class="text-fo">As you know by now, greater magnitudes of uplift can be detected on smaller sample sizes. Low-traffic sites should exploit this and shoot for bigger impact.</p>
+<p class="text">What this means for smaller sites is doing radical testing rather than incremental improvements. Bundle a number of ideas around the same hypothesis into one test. Draw on insights that have come from your users, and rely less on the usual traps of copying competitors and going with instinct.</p>
+<p class="text">Use an MDE calculator to balance detectable effect and achieving reasonable time frames. If it&#x2019;s difficult to get to a desired time frame on the basis of sales conversion rate, you can plug in conversion rates of micro events instead.</p>
+</section>
+<section aria-labelledby="ch09_h3_013">
+<h3 id="ch09_h3_013" class="head-b">Target high-traffic areas</h3>
+<p class="text-fo">To make optimal use of low-traffic volumes, prioritize pages that see the highest number of visitors. Clustering pages together and testing at template level (see <a href="13_chapter07.xhtml#ch07_sec_001">Chapter 7</a> for details) will give the test better exposure.</p>
+<p class="text">You can even ramp up PPC and social advertising in this period. If you do that, it&#x2019;s best to send that traffic directly to the page(s) being tested. One caveat is that bought traffic often behaves differently from the rest, so have a look at the traffic mix on that page.</p>
+<p class="text">The further you move down the funnel of your customer journey, the lower traffic volume is likely to be. Typically, checkout pages see a fraction of the traffic of a product detail page.</p>
+<p class="text">Balanced against this is the fact that when you&#x2019;re closer to the entrance of the funnel, the lower the purchase conversion rate will be. To overcome this challenge, use micro conversion metrics.</p>
+</section>
+<section aria-labelledby="ch09_h3_014">
+<h3 id="ch09_h3_014" class="head-b">Track micro conversions</h3>
+<p class="text-fo">We&#x2019;ve stressed the importance of RPV as the primary metric as far as possible. We&#x2019;ve said that micro conversion events should be used only as secondary metrics. On sites with low traffic and sales activity, however, this is not feasible, and using micro conversion metrics may be your best option.</p>
+<p class="text">Use sales conversion rate where you can measure it directly, such as in the checkout and on the basket page. Beyond that, track micro conversion metrics. If you&#x2019;re testing on the PDP, instead of tracking conversion rate you might track clicks on the &#x2018;Add to Cart&#x2019; button or even the percentage of visitors who scroll down far enough to even see the button.</p>
+<p class="text"><span id="page-171" role="doc-pagebreak" aria-label=" Page 171. " epub:type="pagebreak"/>The idea is to track whatever user activity you can measure to see if your variation has changed user behaviour. If significantly more PDP viewers clicked on the &#x2018;Add to Cart&#x2019; button, that would suggest that the sales conversation is more persuasive. If more of those visitors proceed to the basket page, it could be an indication that purchase intent is higher.</p>
+<p class="text">Those metrics do not automatically translate into more revenue, but you are still able to make more informed decisions. And you&#x2019;re nudging visitors closer to the end goal.</p>
+</section>
+<section aria-labelledby="ch09_h3_015">
+<h3 id="ch09_h3_015" class="head-b">Avoid multiple variations</h3>
+<p class="text-fo">The more variations in your test, the more your traffic pie is cut into little slices. You&#x2019;ll be surprised at how many more visitors you&#x2019;d need to power the test adequately by adding just one variation.</p>
+<p class="text">Test one variation at a time.</p>
+</section>
+<section aria-labelledby="ch09_h3_016">
+<h3 id="ch09_h3_016" class="head-b">Dial down statistical significance</h3>
+<p class="text-fo">As we saw earlier, there is no absolute requirement for business decisions to be based on 95 per cent statistical significance.</p>
+<p class="text">It&#x2019;s important in science, but in a business context it&#x2019;s not such an important signal according to Thomas Redman, author of <i>Data Driven: Profiting from</i> <i>your most important business asset</i>.<sup><a epub:type="noteref" role="doc-noteref" href="#ch09_en23" id="ch09_enx23">23</a></sup></p>
+<p class="text">Decide on a time frame for the test, say a month or so. At that point, make a decision even if statistical significance is not where the purists would want to see it. It&#x2019;s better than making a guess if your alternative is not testing at all.</p>
+</section>
+</section>
+<section aria-labelledby="ch09_h2_008">
+<h2 id="ch09_h2_008" class="head-a">How to avoid common pitfalls</h2>
+<p class="text-fo">After all this effort, the last thing you want is for test results to be rendered invalid owing to technical glitches, or for an experiment to cause your site to break.</p>
+<p class="text">The advice below can help you avoid some common traps.</p>
+<section aria-labelledby="ch09_h3_017">
+<h3 id="ch09_h3_017" class="head-b">Implement the testing platform correctly</h3>
+<p class="text-fo">Make sure the vendor&#x2019;s implementation instructions have been followed to the letter. Apologies if it sounds a bit like IT asking you to check if the computer is switched on, but seriously.</p>
+<p class="text"><span id="page-172" role="doc-pagebreak" aria-label=" Page 172. " epub:type="pagebreak"/>Check that the software is correctly deployed and that it&#x2019;s the latest updated version of the code. We saw a case where a retailer could not get any test to run properly. Changes would display inconsistently and pages would load blank. It was a simple matter of the wrong version of the testing platform code being on the site.</p>
+<p class="text">We&#x2019;ve seen things go wrong because the code had not been placed in exactly the right position on the page. Avoid placement via a tag management tool like GTM (Google Tag Manager).</p>
+</section>
+<section aria-labelledby="ch09_h3_018">
+<h3 id="ch09_h3_018" class="head-b">Do thorough QA</h3>
+<p class="text-fo">Don&#x2019;t ever make any test live without solid QA (quality assurance). Bugs and technical errors go hand in hand with software development. Therefore, each test has to be thoroughly checked after it&#x2019;s been coded. We have caught issues during QA that could have been detrimental to sales had the test gone live.</p>
+<p class="text">Most experimentation platforms let you generate a preview link that can be distributed among the team for QA purposes. Only people with that link can access the test, so there is no risk of your live audience being exposed to it.</p>
+<p class="text">As an agency, we have to be even more careful before rolling out tests on our clients&#x2019; websites. Our developers append query parameters to the target URL in the experimentation platform. So if the test is destined to run on <a href="https://awa-digital.com/"><span class="url-hyperlink"><i>awa-digital.com/</i></span></a> &#x2013; the URL of our agency homepage &#x2013; we would temporarily target it to <a href="https://awa-digital.com/?q=1"><span class="url-hyperlink"><i>awa-digital.com/?q=1</i></span></a>. What that enables us to do is make the test live, but only to users who follow this special link with query parameters appended. We prefer this to a preview link, because it&#x2019;s &#x2018;the real thing&#x2019;. It allows you to test exactly what a user will see once the query parameter is removed.</p>
+<p class="text">Just because it looks fine on your new iMac on a fibre connection, that doesn&#x2019;t mean it looks the same to a user on a laptop and mobile connection. Check that everything is working properly in all major browsers, across devices. Use the device and browser reports in GA to determine which combinations to use for QA. Use a browser emulator to review on platforms that you don&#x2019;t have direct access to.</p>
+<p class="text">It&#x2019;s not only bugs you&#x2019;re looking for. The code may be completely error-free, but there might be usability issues. Is it displaying as expected or does anything look out of place? If you interact with it, does it behave as it should?</p>
+<p class="text">Go beyond the page targeted by the experiment. For example, if the test runs on the PDP, go through the entire process of adding a product to cart and advancing to the basket page.</p>
+</section>
+<section aria-labelledby="ch09_h3_019">
+<h3 id="ch09_h3_019" class="head-b"><span id="page-173" role="doc-pagebreak" aria-label=" Page 173. " epub:type="pagebreak"/>Minimize flicker</h3>
+<p class="text-fo">Flicker is a brief but noticeable delay before the variation displays in the browser. The user gets a fleeting glimpse of the original page, before seeing it change to the variation. Depending on the severity, it can be rather disconcerting. More importantly, it can skew your test results if the user experience is adversely affected.</p>
+<p class="text">The number one way of preventing this is to place the code on the page exactly as directed by the vendor. Some experimentation platforms also offer an additional anti-flicker script that you can install.</p>
+<p class="text">Should you still encounter flicker, ask your developers to find ways to optimize the test code. The fewer lines of code in a test, the less room for things to go wrong.</p>
+<p class="text">They can also try using progressive loading. This is a way to ensure your test code runs as early as possible, and have the variation progressively load over the top of the page. The downside to this is the extra logic needed to poll for various elements, which takes longer and complicates the code.</p>
+</section>
+<section aria-labelledby="ch09_h3_020">
+<h3 id="ch09_h3_020" class="head-b">Avoid code changes during an experiment</h3>
+<p class="text-fo">Avoid making changes to a test while it&#x2019;s in progress. Best practice would be to pause it, make the adjustment, and then clone to start it afresh.</p>
+<p class="text">Any changes to the site code while experiments are in progress may cause a test variation to break. The variation code could have dependencies on seemingly unimportant elements on a page. If you can&#x2019;t avoid making changes to the back end, check each live test afterwards to ensure it hasn&#x2019;t been impacted.</p>
+</section>
+<section aria-labelledby="ch09_h3_021">
+<h3 id="ch09_h3_021" class="head-b">Running concurrent experiments</h3>
+<p class="text-fo">Is it okay to run experiments in parallel? It depends on who you ask. It&#x2019;s the subject of much debate. In one camp there&#x2019;s a strong argument that you should run no more than one experiment at a time, since there is a risk of cross-contamination.</p>
+<p class="text">We assess it on a case-by-case basis, taking into consideration the trade-off with velocity, that is, the number of tests launched in a given period. Limiting yourself to one test at any given time is like crawling when you could be running.</p>
+<p class="text">You don&#x2019;t have to rule out concurrent tests to mitigate risk. Instead, set up rules for governing concurrent tests. First, never run two or more tests in the same area of the site. Before placing two tests in the same funnel, review the <span id="page-174" role="doc-pagebreak" aria-label=" Page 174. " epub:type="pagebreak"/>changes side by side to see if one test may impact the other. Run the combinations with minimum risk. Make the trade-off rather than being slowed down by a purist mindset.</p>
+<p class="text">A watertight option, assuming you have loads of visitors, is to make parallel tests mutually exclusive. That means a visitor can only be bucketed into one at a time.</p>
+</section>
+<section aria-labelledby="ch09_h3_022">
+<h3 id="ch09_h3_022" class="head-b">Should you run an A/A test?</h3>
+<p class="text-fo">The short answer is no. In an A/A test, there is no difference between the two variations. Essentially, you&#x2019;re testing the control against itself in an attempt to surface any anomalies. The theory is that an A/A test should show no difference, and if it does then something is wrong with the setup.</p>
+<p class="text">The reality is different for a number of reasons, so this could send you in the wrong direction. It&#x2019;s a waste of time that should be spent running a real test.</p>
+</section>
+<section aria-labelledby="ch09_h3_023">
+<h3 id="ch09_h3_023" class="head-b">Seasonal effects</h3>
+<p class="text-fo">Seasonal effects can cause your customers to behave differently. For example, motivation to buy is higher over Black Friday. A winning concept in the run-up to Christmas may not have the same impact in January, when the reality of empty wallets has set in.</p>
+<p class="text">Clearly, if most of your revenue is generated over those peak periods, it would be unwise to turn off the test during those times. If you have concerns about the potential impact of seasonality, you could run a follow-on test at a later time. Under ideal conditions, you could also leave a stub of the test running by setting the winning variation to 95 per cent of traffic, with the remaining 5 per cent still seeing the control. This will show the effect over time, as explained later in this chapter.</p>
+<p class="text">Don&#x2019;t shy away from testing during these times. If large portions of your annual revenue are attributable to certain peak periods, you should be optimizing for those. Because of increased traffic, it&#x2019;s also possible to get more accurate results faster.</p>
+</section>
+</section>
+<section aria-labelledby="ch09_h2_009">
+<h2 id="ch09_h2_009" class="head-a">Post-test analysis</h2>
+<p class="text-fo">There are three possible outcomes to an experiment, as measured against the primary metric:</p>
+<ul class="list-bullet"><li><p class="list-bullet"><b><span id="page-175" role="doc-pagebreak" aria-label=" Page 175. " epub:type="pagebreak"/>Win</b>: The variation performed significantly better than the control; colloquially we say the test was &#x2018;positive&#x2019;.</p></li>
+<li><p class="list-bullet"><b>Loss</b>: The variation was significantly weaker than the control, so the test was &#x2018;negative&#x2019;.</p></li>
+<li><p class="list-bullet"><b>Inconclusive</b>: There is no clear difference in performance.</p></li>
+</ul>
+<p class="text-fo">Whatever the result, it is not the end of the road. It&#x2019;s vital to analyse test data for a more comprehensive understanding than the headline win, loss or inconclusive. This is an opportunity to get unique insights, and it&#x2019;s a great source of new ideas for the testing roadmap.</p>
+<section aria-labelledby="ch09_h3_024">
+<h3 id="ch09_h3_024" class="head-b">Review the hypothesis</h3>
+<p class="text-fo">Recall from <a href="14_chapter08.xhtml#ch08_sec_001">Chapter 8</a> that the hypothesis is a prediction about how you intend to improve a metric, based on what you believe to be true. Expect the majority of tests to be negative. As you know by now, we don&#x2019;t see negative tests as failures but as opportunities to learn and edge towards a win.</p>
+<p class="text">When a hypothesis is refuted, this doesn&#x2019;t make the data-driven observations that led to the hypothesis any less relevant (part 1 of the formula in <a href="14_chapter08.xhtml#ch08_sec_001">Chapter 8</a>). It can bring you a step closer to solving the original problem by adjusting the hypothesis. At times, it might bring a new perspective to the original insights that formed the basis of your hypothesis. Either way, you have made progress.</p>
+<p class="text">Say you&#x2019;ve observed that visitors who use site search convert at a much higher rate than non-searchers. You hypothesize that increasing search-box prominence will push more visitors into the search funnel. Since that funnel converts so much better, you expect to see revenue benefit from that knock-on effect. However, test data show that even though the number of searches increased, revenue went down.</p>
+<p class="text">Asking <i>why</i> leads to new emergent knowledge and new avenues to explore. Some suggestions could be:</p>
+<ul class="list-bullet"><li><p class="list-bullet">Site search is &#x2018;bad&#x2019; and needs to be fixed. But if that&#x2019;s the case, why do site searchers in general perform so much better? Not the most plausible explanation for now.</p></li>
+<li><p class="list-bullet">Browsing and discovery are more important for your visitors than you realized. Test this hypothesis.</p></li>
+<li><p class="list-bullet">Site searchers tend to know what they want; they are further along the purchase decision cycle (<a href="10_chapter04.xhtml#ch04_sec_001">Chapter 4</a>) and therefore have stronger intent to buy. Simply pushing more visitors into the search funnel won&#x2019;t change <span id="page-176" role="doc-pagebreak" aria-label=" Page 176. " epub:type="pagebreak"/>motivation to purchase. To them, site search is the wrong path since they don&#x2019;t know exactly what they want yet, hence the drop in revenue. How do we optimize the journey for those users?</p></li>
+</ul>
+<p class="text-fo">A good habit is to consider what you will learn from a negative result <i>before</i> starting a test. Not only does it help you frame the hypothesis for maximum insight generation, you also remind yourself and others that experimentation is not a way of proving that you were right.</p>
+<ul class="list"><li><p class="list">Secondary metrics</p></li>
+</ul>
+<p class="text-fo">While secondary metrics should not be used to decide the outcome of an experiment (if it can be avoided), they are indispensable when it comes to making sense of a test result. The primary metric tells you whether the hypothesis is valid or not. Secondary metrics can tell you why.</p>
+<p class="text">They let you construct a narrative of how the change introduced in your variation impacted user behaviour. What did those who saw the variation do more of compared to those who saw the control? Did the variation see more or fewer clicks on key calls to action? Was there a difference in scrolling behaviour? How was the broader journey different for users who had been exposed to the variation?</p>
+</section>
+<section aria-labelledby="ch09_h3_025">
+<h3 id="ch09_h3_025" class="head-b">Segment the results</h3>
+<p class="text-fo">We all know that people are not the same, and it&#x2019;s likely that different groups of visitors behave differently. It&#x2019;s even possible that what looks like a losing test might in fact be a win in one segment, although it&#x2019;s too early to get excited about that.</p>
+<p class="text">Post-test segmentation can usually be done within the experimentation platform, but an even better way is integrating each test with Google Analytics. This enables you to do thorough analysis with all the richness that GA offers.</p>
+<p class="text">Just some examples of segments you could look at:</p>
+<ul class="list-bullet"><li><p class="list-bullet">Desktop vs mobile</p></li>
+<li><p class="list-bullet">Paid vs non-paid traffic</p></li>
+<li><p class="list-bullet">New vs returning visitors</p></li>
+<li><p class="list-bullet">First-time buyers vs loyal customers</p></li>
+<li><p class="list-bullet">Country or region</p></li>
+<li><p class="list-bullet">browser or operating system.</p></li>
+</ul>
+<p class="text-fo"><span id="page-177" role="doc-pagebreak" aria-label=" Page 177. " epub:type="pagebreak"/>As you compare the performance of different segments, try to explain any differences in behaviour. Why did particular segments respond as they did? If there&#x2019;s any difference in performance, what could be behind that? What does it tell you about preferences or behavioural differences between the various user groups? Does it give you any new insight into a persona?</p>
+<p class="text">Don&#x2019;t jump to conclusions based on segmented reporting, as it increases your chance of finding a <i>false positive</i> or fluke win. Disregard any interesting results based on small sample sizes. Also bear in mind that one segment in isolation is just one part of the full picture.</p>
+<aside id="ch09_aside_002" class="case-study" role="complementary" epub:type="case-study" aria-labelledby="ch09_boxtitle_002">
+<h4 id="ch09_boxtitle_002" class="title" epub:type="title"><span class="txt-capitalize"><b>Case Study</b></span> Thompson &#x0026; Morgan</h4>
+<p class="text-fo">Thompson &#x0026; Morgan is a brand leader in plants, seeds and fruit trees. Customers love Thompson &#x0026; Morgan for its wide variety of merchandise, and many of them spend hours browsing the site. We found that shoppers were heavily influenced by images.</p>
+<p class="text">Product listing pages (PLPs) are a vital part of how they discover Thompson &#x0026; Morgan&#x2019;s full range of merchandise. We hypothesized that showing more products on the PLP, and using larger images, would better show off the breadth of offering, and would improve the buying experience. This meant changing the PLP from a list view to a grid layout.</p>
+<p class="text">The experiment was negative. As to why this could have been the case, we identified a few possibilities:</p>
+<ul class="list-bullet"><li><p class="list-bullet">The hypothesis that a bigger variety of images on the PLP would improve the buying experience was refuted.</p></li>
+<li><p class="list-bullet">Basic product information, which was present in the list view but removed from the grid view, is vital in the customer&#x2019;s purchase decision.</p></li>
+<li><p class="list-bullet">Showing the breadth of offering actually made it more difficult to make a choice, a concept known as the &#x2018;paradox of choice&#x2019;.</p></li>
+</ul>
+<p class="text-fo">Each of these possible explanations gives rise to new ideas, so it led to a few more experiments in this area. We subsequently found that larger images were in fact better, but showing basic product information at this point in the journey was equally important. That was the insight we needed to have in order to generate decent wins on this page. The only way to get to this learning was by testing it, and working with the negative result.</p>
+</aside>
+
+</section>
+</section>
+<section aria-labelledby="ch09_h2_010">
+<h2 id="ch09_h2_010" class="head-a"><span id="page-178" role="doc-pagebreak" aria-label=" Page 178. " epub:type="pagebreak"/>Make the winning experience live</h2>
+<p class="text-fo">Clearly you want to lock in the win as soon as possible. Yet, you&#x2019;d be surprised how many times this fails to happen. The only thing worse than not testing at all is to sit on winning variations without committing the changes live on the site in order to start realizing the gains.</p>
+<p class="text">There are a number of options for rolling out the winning changes on your site. Here are the most common approaches in our experience.</p>
+<ol class="list-number"><li><p class="list-number">Hard-code the winning variation, to make it a permanent feature of the site.</p></li>
+<li><p class="list-number">Serve the winning variation to 100 per cent of visitors, rather than 50 per cent as before.</p></li>
+<li><p class="list-number">Put the winning code live on the site via a tag manager.</p></li>
+<li><p class="list-number">Run a stub, where 5 per cent of website visitors continue to see the control.</p></li>
+</ol>
+<p class="text-fo"><a id="rch09_tab_001" href="#ch09_tab_001">Table 9.1</a> summarizes the pros and cons of each of these approaches.</p>
+<figure class="table" id="ch09_tab_001"><figcaption>
+<p class="table"><a href="#rch09_tab_001"><span class="label" epub:type="label"><span id="page-179" role="doc-pagebreak" aria-label=" Page 179. " epub:type="pagebreak"/>Table</span> <span class="ordinal" epub:type="ordinal">9.1</span> Options to integrate a winning test result into the live site. Number 1 is the preferred route</a><span id="page-180" role="doc-pagebreak" aria-label=" Page 180. " epub:type="pagebreak"/></p>
+</figcaption><p class="table-skip"><a href="#ch09_skip_001">Skip table</a></p>
+<!--<div class="table" role="table" tabindex="0">--><table class="shade-even left">
+<thead><tr><th scope="col"><p class="table-head">#</p></th>
+<th scope="col" ><p class="table-head">Approach</p></th>
+<th scope="col" ><p class="table-head">Advantages</p></th>
+<th scope="col" ><p class="table-head">Disadvantages</p></th>
+<th scope="col" ><p class="table-head">Recommendation</p></th></tr>
+</thead><tbody><tr>
+<td><p class="table-text">1</p></td>
+<td><p class="table-text">Hard-code the winning variation</p></td>
+<td><p class="table-text">The winning variation becomes part of the permanent code of the website. The most reliable option.</p><p class="table-text">Experimentation can help to prioritize your development backlog. It is a good way to ensure that your developers are working on features that will have a positive impact.</p></td>
+<td><p class="table-text">Integrating this version into the website&#x2019;s code will require backend development resourcing.</p></td>
+<td><p class="table-text"/></td>
+</tr>
+<tr>
+<td><p class="table-text">2</p></td>
+<td><p class="table-text">Test platform serves winning variation to 100% of website visitors</p></td>
+<td><p class="table-text">All visitors will see the winning variation, and instead of getting only 50% of the uplift, you get all of it. It is immediate; you save development costs in the short term.</p></td>
+<td><p class="table-text">While this practice is common, most platforms are not built to be serving winning variations on a continuous basis.</p><p class="table-text">It&#x2019;s standard for the number of test participants to be capped by the experimentation platform. Serving tests at 100% will erode your allocation and may have commercial implications.</p><p class="table-text">If the page targeted by the experiment is updated on the server, the variation running at 100% might break.</p><p class="table-text">Google&#x2019;s guidelines are to serve variations only as long as is necessary, in other words until the experiment is concluded.<sup><a epub:type="noteref" role="doc-noteref" href="#ch09_en24" id="ch09_enx24">24</a></sup></p></td>
+<td><p class="table-text">If you have development resource available this is most sensible option.</p></td>
+</tr>
+<tr>
+<td><p class="table-text">3</p></td>
+<td><p class="table-text">Make the code live via a tag manager</p></td>
+<td><p class="table-text">Usually an interim solution to lock in the win until the back-end resources are available to hard-code it.</p><p class="table-text">We&#x2019;ve seen commercial tag managers do a good job of serving several winners simultaneously over a prolonged period, without any noticeable adverse impact.</p></td>
+<td><p class="table-text">Tag management mechanisms are not designed for this purpose. There is a risk that site performance may be impacted by this.</p></td>
+<td><p class="table-text">This is the right option if you have treated a relatively static part of the website and want to see what uplift the winning variation continues to produce on an ongoing basis.</p></td>
+</tr>
+<tr>
+<td><p class="table-text">4</p></td>
+<td><p class="table-text">Show the winning variation to 95% of the audience, and let 5% of them still see the control</p></td>
+<td><p class="table-text">You can validate the win on an ongoing basis, and check for seasonal and perishability effects. Perishability is when an uplift gradually fades out, which can happen for many reasons.</p><p class="table-text">This option will be useful if you&#x2019;re likely to need external validation at a later time.</p></td>
+<td><p class="table-text">Unless you have huge volumes of traffic, you can&#x2019;t read much into a 5% segment.</p><p class="table-text">If regular changes are made to your website, this could cause the variation to &#x2018;break&#x2019;.</p></td>
+<td><p class="table-text"/></td>
+</tr>
+</tbody></table><!--</div>-->
+</figure>
+<!--TS: [!T/S: the note number in the table should be 24 (Moskva, 2012)!]-->
+<p class="text-fo" id="ch09_skip_001">When asking your web development team or agency to hard-code a win, give them a good brief, covering the following:</p>
+<ul class="list-bullet"><li><p class="list-bullet">Screenshots of the control and variation(s)</p></li>
+<li><p class="list-bullet">Outline of differences introduced by the variation(s)</p></li>
+<li><p class="list-bullet">Any changes to business logic</p></li>
+<li><p class="list-bullet">Results achieved during the test</p></li>
+<li><p class="list-bullet">Code created for the variation in the testing tool&#x2019;s code engine</p></li>
+<li><p class="list-bullet">any special events that require additional QA/checking in development.</p></li>
+</ul>
+<p class="text-fo">As with any change to your site, review this implementation before it goes live. Make sure it&#x2019;s a fair copy of the winning variation, that it looks and functions exactly the same. It sounds like an obvious thing, but ignoring it means disregarding the test results.</p>
+</section>
+<section>
+
+<h2 id="ch09_h2_011" class="head-a">Document test results</h2>
+<p class="text-fo">A test is not done until everything has been recorded and insights have been shared with the team. Diligent documentation is an inseparable part of the experimentation programme. It also loops back into your experimentation roadmap, so you can build on the learnings.</p>
+<section aria-labelledby="ch09_h3_026">
+<h3 id="ch09_h3_026" class="head-b"><span id="page-181" role="doc-pagebreak" aria-label=" Page 181. " epub:type="pagebreak"/>Knowledge base</h3>
+<p class="text-fo">Set up a knowledge base where results and insights are captured. This is a detailed record of every split test. It doesn&#x2019;t have to be anything fancy. We&#x2019;ve seen it done effectively using a spreadsheet in the cloud, an internal wiki and bespoke software.</p>
+<p class="text">What&#x2019;s more important is that it&#x2019;s done and accessible throughout the organization. It is an inventory of hypotheses, insights and conclusions from all tests. It quickly becomes a huge institutional asset with benefits way beyond website optimization.</p>
+<p class="text">After each split-test result, update your knowledge base in the following areas:</p>
+<ul class="list-bullet"><li><p class="list-bullet">unique ID;</p></li>
+<li><p class="list-bullet">Descriptive title</p></li>
+<li><p class="list-bullet">Number of variations</p></li>
+<li><p class="list-bullet">Audience or segments targeted</p></li>
+<li><p class="list-bullet">Number of visitors per variation</p></li>
+<li><p class="list-bullet">Hypothesis</p></li>
+<li><p class="list-bullet">Area of website treated</p></li>
+<li><p class="list-bullet">Source(s) of insight</p></li>
+<li><p class="list-bullet">Start and end date of test</p></li>
+<li><p class="list-bullet">Cost to create and run test</p></li>
+<li><p class="list-bullet">Cost to implement test</p></li>
+<li><p class="list-bullet">Screenshots of the control and variations</p></li>
+<li><p class="list-bullet">Screenshot of test results</p></li>
+<li><p class="list-bullet">Outline of the changes introduced</p></li>
+<li><p class="list-bullet">Primary metric and uplift</p></li>
+<li><p class="list-bullet">Statistical significance</p></li>
+<li><p class="list-bullet">Annualized revenue impact on the business</p></li>
+<li><p class="list-bullet">Key segments</p></li>
+<li><p class="list-bullet">Key learnings</p></li>
+<li><p class="list-bullet">next steps.</p></li>
+</ul>
+</section>
+<section>
+
+<h3 id="ch09_h3_027" class="head-b"><span id="page-182" role="doc-pagebreak" aria-label=" Page 182. " epub:type="pagebreak"/>Test conclusion report</h3>
+<p class="text-fo">Send a summary of each concluded experiment to stakeholders. This can simply be an extension of the test-brief document. Below is a recommended structure:</p>
+<ul class="list-bullet"><li><p class="list-bullet">Overview:</p>
+<ul class="list-bullet-sub">
+<li><p class="list-bullet-sub">Summary of insights leading to the test</p></li>
+<li><p class="list-bullet-sub">Hypothesis</p></li>
+<li><p class="list-bullet-sub">Result</p></li></ul></li>
+<li><p class="list-bullet">Details:</p>
+<ul class="list-bullet-sub">
+<li><p class="list-bullet-sub">Screenshots of the control and variation(s)</p></li>
+<li><p class="list-bullet-sub">Outline of the changes introduced</p></li>
+<li><p class="list-bullet-sub">Pages or area of the site targeted</p></li>
+<li><p class="list-bullet-sub">Audience or segments targeted</p></li></ul></li>
+<li><p class="list-bullet">Results:</p>
+<ul class="list-bullet-sub">
+<li><p class="list-bullet-sub">Primary metric</p></li>
+<li><p class="list-bullet-sub">Statistical significance</p></li>
+<li><p class="list-bullet-sub">Number of visitors per variation</p></li>
+<li><p class="list-bullet-sub">Test duration and dates</p></li>
+<li><p class="list-bullet-sub">Screenshot of the results</p></li>
+<li><p class="list-bullet-sub">Annualized revenue impact on the business</p></li>
+<li><p class="list-bullet-sub">Key learnings</p></li>
+<li><p class="list-bullet-sub">Next steps</p></li></ul></li>
+</ul>
+<p class="text-fo">There are many benefits in distributing the results to your colleagues, including:</p>
+<ul class="list-bullet"><li><p class="list-bullet">They can learn about the value of experimentation and see evidence triumphing over opinion.</p></li>
+<li><p class="list-bullet">What you learn from the test results, which is effectively how your online customers behave, can be shared and often used in other forms of marketing, such as stores, catalogues or direct marketing campaigns.</p></li>
+<li><p class="list-bullet">It shows you are open and willing to share what you have learnt about the behaviour of your website visitors &#x2013; whether or not the test is positive.</p></li>
+<li><p class="list-bullet">It&#x2019;s great to celebrate wins when your optimization efforts pay off.</p></li>
+</ul>
+</section>
+</section>
+<section aria-labelledby="ch09_h2_012">
+<h2 id="ch09_h2_012" class="head-a"><span id="page-183" role="doc-pagebreak" aria-label=" Page 183. " epub:type="pagebreak"/>Summary</h2>
+<p class="text-fo">An experiment enables you to test hypotheses and to establish causality. That makes it one of the best inputs for data-backed decision-making.</p>
+<p class="text">A/B tests are the most common type of online experiment. Half of your visitors see the control and the rest see the variation, which contains the changes being tested.</p>
+<p class="text">A primary metric is used to measure the impact of these newly introduced changes on a business KPI. In e-commerce optimization, the most typical KPIs are revenue per visitor, average order value and conversion rate.</p>
+<p class="text">As long as the difference between the control and the variation is the only change, any movement in the primary metric must have come about as a result of that change. This is how cause and effect can be determined.</p>
+<p class="text">In choosing a primary metric, try to get as close to revenue as possible. When the site does not have a lot of traffic, it may be difficult to use revenue goals. In this situation, it is better to opt for conversion rate instead.</p>
+<p class="text">It is equally important to track a broad range of secondary metrics as part of the test. The main purpose of these metrics is to give context to any observed change in the primary metric. It helps you to build a narrative about how user behaviour was altered and how that contributed to the result. All of this can help you understand where to focus efforts in the future.</p>
+<p class="text">Basic understanding of a few statistical principles will help you interpret test results. Avoid the common and misguided over-reliance on statistical significance and use other equally important data points to get a comprehensive and robust picture. In a business context, statistical significance should not be the primary consideration.</p>
+<p class="text">Once a test is concluded, you should conduct post-test analysis. This is an opportunity to tap unique insights from the test results. It is especially important to analyse negative test results to understand why the hypothesis has been refuted. It will bring you one step closer to a winning solution to the problem being addressed in the hypothesis.</p>
+<p class="text">An experiment is not finished until results and discoveries have been documented. Finally, have a process in place to make winning variations live on the site so that you can bank the gains.</p>
+</section>
+<section id="ch09_sec_002" class="chapter-endnotes" aria-labelledby="ch09_h2_013" epub:type="endnotes" role="doc-endnotes">
+<h2 id="ch09_h2_013" class="title" epub:type="title"><span id="page-184" role="doc-pagebreak" aria-label=" Page 184. " epub:type="pagebreak"/>Notes</h2>
+<ol class="none">
+<li class="endnote-text" id="ch09_en1"><a role="doc-backlink"  href="#ch09_enx1">1</a> Price, C (2015) <i>Vitamania: Our</i> <i>obsessive quest for nutritional perfection</i>, Penguin Press, London</li>
+<li class="endnote-text" id="ch09_en2"><a role="doc-backlink"  href="#ch09_enx2">2</a> Worrall, S (2017) [Accessed 7 August 2020] A nightmare disease haunted ships during Age of Discovery, <i>National Geographic</i> [Online] <a href="http://www.nationalgeographic.com/news/2017/01/scurvy-disease-discovery-jonathan-lamb/"><span class="url-hyperlink">www.nationalgeographic.com/news/2017/01/scurvy-disease-discovery-jonathan-lamb/</span></a> (archived at <a href="https://perma.cc/7RGX-A8ZW"><span class="url-hyperlink">https://perma.cc/7RGX-A8ZW</span></a>)</li>
+<li class="endnote-text" id="ch09_en3"><a role="doc-backlink"  href="#ch09_enx3">3</a> Hughes R E (1975) James Lind and the cure of scurvy: An experimental approach, <i>Medical History</i>, <b>19</b> (4), pp 342&#x2013;51</li>
+<li class="endnote-text" id="ch09_en4"><a role="doc-backlink"  href="#ch09_enx4">4</a> Tull, D and Hawkins, D (1984) <i>Marketing Research: Measurement and</i> <i>m</i><i>ethod</i>, 3rd edn, Macmillan, New York</li>
+<li class="endnote-text" id="ch09_en5"><a role="doc-backlink"  href="#ch09_enx5">5</a> McFarland, C (2012) <i>Experiment</i><i>!</i> <i>Website conversion rate optimization with A/B and multivariate testing</i>, New Riders, Berkeley, CA</li>
+<li class="endnote-text" id="ch09_en6"><a role="doc-backlink"  href="#ch09_enx6">6</a> Bauer, K (2004) KPIs &#x2013; the metrics that drive performance management, <i>Information Management</i>, <b>14</b> (9), p 63</li>
+<li class="endnote-text" id="ch09_en7"><a role="doc-backlink"  href="#ch09_enx7">7</a> Bladt, J and Filbin, B (2013) [Accessed 7 August 2020] Know the difference between your data and your metrics, <i>Harvard Business Review</i> [Online] <a href="https://hbr.org/2013/03/know-the-difference-between-yo"><span class="url-hyperlink">https://hbr.org/2013/03/know-the-difference-between-yo</span></a> (archived at <a href="https://perma.cc/B3KA-68MM"><span class="url-hyperlink">https://perma.cc/B3KA-68MM</span></a>)</li>
+<li class="endnote-text" id="ch09_en8"><a role="doc-backlink"  href="#ch09_enx8">8</a> Kohavi, R and Thomke, S (2017) The surprising power of online experiments, <i>Harvard Business Review</i>, September&#x2013;October, pp 74&#x2013;82</li>
+<li class="endnote-text" id="ch09_en9"><a role="doc-backlink"  href="#ch09_enx9">9</a> Weiss, C H (1997) <i>Evaluation: Methods for</i> <i>studying programs and policies</i>, 2nd edn, Prentice Hall, Upper Saddle River, NJ</li>
+<li class="endnote-text" id="ch09_en10"><a role="doc-backlink"  href="#ch09_enx10">10</a> Jewkes, H, Stuart, T and Aijaz, A (2018) <i>Understanding Experimentation Platforms</i>, O&#x2019;Reilly Media, Farnham, Surrey</li>
+<li class="endnote-text" id="ch09_en11"><a role="doc-backlink"  href="#ch09_enx11">11</a> Kohavi, R and Thomke, S (2017) The surprising power of online experiments, <i>Harvard Business Review</i>, September&#x2013;October, pp 74&#x2013;82</li>
+<li class="endnote-text" id="ch09_en12"><a role="doc-backlink"  href="#ch09_enx12">12</a> Optimizely (nd) [Accessed 7 August 2020] Multivariate testing, <i>Optimizely</i> [Online] <a href="http://www.optimizely.com/optimization-glossary/multivariate-testing/"><span class="url-hyperlink">www.optimizely.com/optimization-glossary/multivariate-testing/</span></a> (archived at <a href="https://perma.cc/C6AV-CBZ4"><span class="url-hyperlink">https://perma.cc/C6AV-CBZ4</span></a>)</li>
+<li class="endnote-text" id="ch09_en13"><a role="doc-backlink"  href="#ch09_enx13">13</a> Gu, J (2018) Continuous experiment framework at Uber, Presentation at the Open Data Science Conference, California</li>
+<li class="endnote-text" id="ch09_en14"><a role="doc-backlink"  href="#ch09_enx14">14</a> Kohavi, R <i>et al</i> (2013) Online controlled experiments at large scale, in <i>KDD &#x2019;</i><i>13: Proceedings of the 19th ACM SIGKDD international conference on</i> <i>k</i><i>nowledge discovery and data mining</i>, ed R Ghani <i>et al</i>, pp 1168&#x2013;76, ACM, New York</li>
+<li class="endnote-text" id="ch09_en15"><a role="doc-backlink"  href="#ch09_enx15">15</a> Mac, R (2016) [Accessed 7 August 2020] Jeff Bezos calls Amazon &#x2018;best place in the world to fail&#x2019; in shareholder letter, <i>Forbes</i> [Online] <a href="http://www.forbes.com/sites/ryanmac/2016/04/05/jeff-bezos-calls-amazon-best-place-in-the-world-to-fail-in-shareholder-letter/#4a69c5587bc5"><span class="url-hyperlink">www.forbes.com/sites/ryanmac/2016/04/05/jeff-bezos-calls-amazon-best-place-in-the-world-to-fail-in-shareholder-letter/#4a69c5587bc5</span></a> (archived at <a href="https://perma.cc/R8X7-5978"><span class="url-hyperlink">https://perma.cc/R8X7-5978</span></a>)</li>
+<li class="endnote-text" id="ch09_en16"><span id="page-185" role="doc-pagebreak" aria-label=" Page 185. " epub:type="pagebreak"/><a role="doc-backlink"  href="#ch09_enx16">16</a> Hoffman, R (2017) [Accessed 7 August 2020] Facebook&#x2019;s Mark Zuckerberg: &#x2018;Is this going to destroy the company? If not, let them test it&#x2019;, <i>Masters of Scale podcast</i> [Online] <a href="https://www.linkedin.com/pulse/going-destroy-company-let-them-test-reid-hoffman/"><span class="url-hyperlink">www.linkedin.com/pulse/going-destroy-company-let-them-test-reid-hoffman/</span></a> (archived at <a href="https://perma.cc/ESN3-92HX"><span class="url-hyperlink">https://perma.cc/ESN3-92HX</span></a>)</li>
+<li class="endnote-text" id="ch09_en17"><a role="doc-backlink"  href="#ch09_enx17">17</a> Conversation at Which Test Won, Berlin, October 2015</li>
+<li class="endnote-text" id="ch09_en18"><a role="doc-backlink"  href="#ch09_enx18">18</a> Lee, D (2015) [Accessed 7 August 2020] AB testing: Test big to find your strategic optimal, <i>LinkedIn</i> [Online] <a href="http://www.linkedin.com/pulse/ab-testing-test-big-find-your-strategic-optimal-daniel-analytics"><span class="url-hyperlink">www.linkedin.com/pulse/ab-testing-test-big-find-your-strategic-optimal-daniel-analytics</span></a> (archived at <a href="https://perma.cc/4XP7-N45E"><span class="url-hyperlink">https://perma.cc/4XP7-N45E</span></a>)</li>
+<li class="endnote-text" id="ch09_en19"><a role="doc-backlink"  href="#ch09_enx19">19</a> Kahneman, D (2011) <i>Thinking, Fast and Slow</i>, Farrar, Straus and Giroux, New York</li>
+<li class="endnote-text" id="ch09_en20"><a role="doc-backlink"  href="#ch09_enx20">20</a> Optimizely (2020) [Accessed 7 August 2020] How long to run an experiment, <i>Optimizely</i> [Online] <a href="https://help.optimizely.com/Analyze_Results/How_long_to_run_an_experiment"><span class="url-hyperlink">https://help.optimizely.com/Analyze_Results/How_long_to_run_an_experiment</span></a> (archived at <a href="https://perma.cc/4LB7-QJVC"><span class="url-hyperlink">https://perma.cc/4LB7-QJVC</span></a>)</li>
+<li class="endnote-text" id="ch09_en21"><a role="doc-backlink"  href="#ch09_enx21">21</a> Gallo, A (2016) [Accessed 7 August 2020] A refresher on statistical significance, <i>Harvard Business Review</i> [Online] <a href="https://hbr.org/2016/02/a-refresher-on-statistical-significance"><span class="url-hyperlink">https://hbr.org/2016/02/&#x000A;a-refresher-on-statistical-significance</span></a> (archived at <a href="https://perma.cc/9Y49-JZFK"><span class="url-hyperlink">https://perma.cc/9Y49-JZFK</span></a>)</li>
+<li class="endnote-text" id="ch09_en22"><a role="doc-backlink"  href="#ch09_enx22">22</a> Goodson, M (2014) [Accessed 7 August 2020] Most winning A/B test results are illusory, <i>Qubit</i> [Online] <a href="http://www.qubit.com/research/most-winning-ab-test-results-are-illusory/"><span class="url-hyperlink">www.qubit.com/research/most-winning-ab-test-results-are-illusory/</span></a> (archived at <a href="https://perma.cc/ET7V-2L2F"><span class="url-hyperlink">https://perma.cc/ET7V-2L2F</span></a>)</li>
+<li class="endnote-text" id="ch09_en23"><a role="doc-backlink"  href="#ch09_enx23">23</a> Gallo, A (2016) A refresher on statistical significance, <i>Harvard Business Review</i> [Online] <a href="https://hbr.org/2016/02/a-refresher-on-statistical-significance"><span class="url-hyperlink">https://hbr.org/2016/02/a-refresher-on-statistical-significance</span></a> (archived at <a href="https://perma.cc/9Y49-JZFK"><span class="url-hyperlink">https://perma.cc/9Y49-JZFK</span></a>)</li>
+<li class="endnote-text" id="ch09_en24"><a role="doc-backlink"  href="#ch09_enx24">24</a> Moskwa, S (2012) Website testing and Google search, <i>Google Webmaster Central Blog</i> [Online] <a href="https://googlewebmastercentral.blogspot.co.uk/2012/08/website-testing-google-search.html"><span class="url-hyperlink">https://googlewebmastercentral.blogspot.co.uk/2012/08/website-testing-google-search.html</span></a> (archived at <a href="https://perma.cc/7EV4-3NGS"><span class="url-hyperlink">https://perma.cc/7EV4-3NGS</span></a>)</li>
+</ol>
+</section>
+</section></body>
+</html>
